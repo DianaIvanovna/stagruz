@@ -1,0 +1,7 @@
+@mixin fontValue($style, $weight, $size, $height) {
+  font-family: "Raleway";
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $height;
+}
