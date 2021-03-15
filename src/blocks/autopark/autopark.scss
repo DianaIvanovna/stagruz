@@ -9,5 +9,19 @@
 .autopark {
   @include margins;
 
-  height: 500px;
+  margin-top: 200px;
+
+  .swiper-container_autopark {
+    width: 100%;
+  }
+
+  .swiper-button-next_autopark::after {
+    font-size: 48px;
+    color: #000;
+  }
+
+  .swiper-button-prev_autopark::after {
+    font-size: 48px;
+    color: #000;
+  }
 }
