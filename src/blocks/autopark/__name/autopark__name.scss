@@ -1,0 +1,16 @@
+.autopark__name {
+  @include fontValue(normal, bold, 18px, 150.4%);
+
+  margin: 0;
+  color: $text-color;
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid $attention-color;
+    width: 63px;
+    height: 0;
+  }
+}
