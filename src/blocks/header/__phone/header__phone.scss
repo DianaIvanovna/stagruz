@@ -1,0 +1,13 @@
+.header__phone {
+  @include fontValueMontserrat(normal, bold, 24px, 29px);
+
+  margin: 0;
+  width: 200px;
+  color: $text-color-white;
+
+  @media screen and (max-width: 550px) {
+    @include fontValueMontserrat(normal, bold, 14px, 17px);
+
+    width: 116px;
+  }
+}

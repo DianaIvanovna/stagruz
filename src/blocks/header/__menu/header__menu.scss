@@ -1,0 +1,33 @@
+.header__menu {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  margin-bottom: 17px;
+  width: 100%;
+
+  .header__icon {
+    display: inline-block;
+    padding-bottom: 11px;
+
+    &:first-of-type {
+      margin-right: 22px;
+    }
+  }
+
+  @media screen and (max-width: 1040px) {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 50px 50px;
+    background: $attention-color;
+
+    .header__link_active {
+      border-bottom: 2px solid $text-color-white;
+    }
+  }
+}

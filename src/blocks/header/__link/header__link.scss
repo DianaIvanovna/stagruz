@@ -1,0 +1,19 @@
+@import "./_active/header__link_active.scss";
+
+.header__link {
+  padding-bottom: 13px;
+
+  a {
+    @include fontValue(normal, 400, 12px, 14px);
+
+    margin: 0 10px;
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  @media screen and (max-width: 1040px) {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+}

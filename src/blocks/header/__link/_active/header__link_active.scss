@@ -1,0 +1,7 @@
+.header__link_active {
+  border-bottom: 2px solid $attention-color;
+
+  a {
+    @include fontValue(normal, bold, 12px, 14px);
+  }
+}
