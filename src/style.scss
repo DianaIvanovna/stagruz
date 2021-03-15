@@ -1,9 +1,10 @@
+@import "../node_modules/swiper/swiper-bundle.css";
 @import url("./vendor/normalize.css");
 @import url("./vendor/font/font.css");
 @import "./vendor/variables.scss";
 @import "./blocks/header/header.scss";
 @import "./blocks/background-mobile/background-mobile.scss";
-@import "../node_modules/swiper/swiper-bundle.css";
+@import "./blocks/autopark/autopark.scss";
 
 .content {
   overflow: hidden;
@@ -104,6 +105,10 @@
 .button__to-form {
   color: $text-color-white;
   background: linear-gradient(180deg, $attention-color 0%, #ff833a 100%);
+}
+
+.button__to-form_autopark {
+  width: 293px;
 }
 
 .button__second {
