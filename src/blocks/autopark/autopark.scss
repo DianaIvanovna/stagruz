@@ -12,7 +12,8 @@
   margin-top: 200px;
 
   .swiper-container_autopark {
-    width: 100%;
+    position: relative;
+    border: 1px solid hsl(0, 100%, 50%);
   }
 
   .swiper-button-next_autopark::after {
