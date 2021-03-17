@@ -1,0 +1,16 @@
+.footer__confidense {
+  @include fontValueMontserrat(normal, bold, 14px, 17px);
+
+  margin: 0;
+  color: $text-color-white;
+
+  @media screen and (max-width: 600px) {
+    @include fontValueMontserrat(normal, bold, 12px, 14px);
+  }
+}
+
+.footer__confidense_2 {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}

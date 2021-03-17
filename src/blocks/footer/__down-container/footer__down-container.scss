@@ -1,0 +1,16 @@
+.footer__down-container {
+  @include margins;
+
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 30px;
+  }
+}

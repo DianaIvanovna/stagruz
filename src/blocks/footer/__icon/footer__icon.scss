@@ -1,0 +1,9 @@
+.footer__icon {
+  margin-right: 15px;
+
+  @media screen and (max-width: 500px) {
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+  }
+}

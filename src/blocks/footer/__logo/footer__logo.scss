@@ -1,0 +1,17 @@
+.footer__logo_opacity {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+.footer__logo_dark {
+  position: absolute;
+  left: calc(100% / 2);
+  top: -80px;
+  display: none;
+  transform: translateX(-50%);
+
+  @media screen and (max-width: 900px) {
+    display: block;
+  }
+}

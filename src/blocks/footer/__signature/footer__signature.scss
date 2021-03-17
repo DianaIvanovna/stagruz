@@ -1,0 +1,13 @@
+.footer__signature {
+  @include fontValue(normal, normal, 24px, 108.4%);
+
+  text-align: center;
+  color: $title-color;
+
+  @media screen and (max-width: 500px) {
+    @include fontValue(normal, normal, 18px, 108.4%);
+
+    margin: 0 auto 20px;
+    width: 200px;
+  }
+}

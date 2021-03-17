@@ -1,0 +1,41 @@
+.footer__car_left {
+  position: absolute;
+  left: 20px;
+  bottom: 76px;
+
+  @media screen and (max-width: 1300px) {
+    transform: translateX(-40%);
+  }
+
+  @media screen and (max-width: 900px) {
+    bottom: 35px;
+    transform: translateX(-60%);
+  }
+
+  @media screen and (max-width: 600px) {
+    bottom: 40px;
+    width: 290px;
+    transform: translateX(-75%);
+  }
+}
+
+.footer__car_right {
+  position: absolute;
+  right: 20px;
+  bottom: 76px;
+
+  @media screen and (max-width: 1300px) {
+    transform: translateX(40%);
+  }
+
+  @media screen and (max-width: 900px) {
+    bottom: 35px;
+    transform: translateX(60%);
+  }
+
+  @media screen and (max-width: 600px) {
+    bottom: 40px;
+    width: 290px;
+    transform: translateX(75%);
+  }
+}

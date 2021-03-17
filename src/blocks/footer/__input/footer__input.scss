@@ -1,0 +1,19 @@
+@import "./_textarea/footer__input_textarea.scss";
+
+.footer__input {
+  margin-bottom: 16px;
+  border: 1px solid $attention-border;
+  padding: 12px 24px;
+  width: 100%;
+  max-width: calc((100% / 2) - 8px);
+  box-sizing: border-box;
+  background: $text-color-white;
+
+  &:first-of-type {
+    margin-right: 12px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 5px 12px;
+  }
+}
