@@ -1,0 +1,20 @@
+.services__signature {
+  @include fontValue(normal, 800, 300px, 300px);
+
+  position: absolute;
+  left: 0;
+  bottom: -6%;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: $text-color-white;
+  opacity: 0.1;
+
+  @media screen and (max-width: 1440px) {
+    @include fontValue(normal, 800, 21vw, 21vw);
+  }
+
+  @media screen and (max-width: 1040px) {
+    display: none;
+  }
+}

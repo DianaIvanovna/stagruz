@@ -1,6 +1,7 @@
 .services__container {
   @include margins;
 
+  position: relative;
   display: grid;
   column-gap: 13px;
   justify-content: center;
