@@ -4,13 +4,11 @@
 @import "./__img/autopark__img.scss";
 @import "./__name/autopark__name.scss";
 @import "./__property/autopark__property.scss";
-@import "./__title/autopark__title.scss";
 
 .autopark {
   @include margins;
 
   position: relative;
-  margin-top: 200px;
 
   .button__to-form_autopark {
     width: 100%;
@@ -27,7 +25,7 @@
   width: 100%;
 
   .swiper-container_autopark {
-    padding: 20px 0;
+    padding: 20px 5px;
     width: 100%;
   }
 
@@ -38,11 +36,11 @@
     color: #000;
 
     @media screen and (max-width: 1140px) {
-      left: calc(100% + 20px);
+      left: calc(100% + 23px);
     }
 
     @media screen and (max-width: 500px) {
-      left: calc(100% + 10px);
+      left: calc(100% + 12px);
       font-size: 32px;
     }
   }

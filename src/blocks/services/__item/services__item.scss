@@ -1,0 +1,19 @@
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $text-color-white;
+  padding: 45px 0 41px;
+  width: 100%;
+  max-width: 290px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 550px) {
+    padding: 25px 0 23px;
+
+    img {
+      width: 55px;
+      height: 55px;
+    }
+  }
+}

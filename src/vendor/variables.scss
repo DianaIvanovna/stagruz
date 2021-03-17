@@ -25,23 +25,39 @@ $text-color-white: #fff;
   line-height: $height;
 }
 
+@mixin fontValueRoboto($style, $weight, $size, $height) {
+  font-family: "Roboto";
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin gradient {
+  background: linear-gradient(180deg, #ff904e 0%, #ff8339 100%);
+}
+
 @mixin margins {
   margin: 0 auto;
   max-width: 1440px;
 
   @media screen and (min-width: 1440px) {
-    padding: 0 120px;
+    padding-right: 120px;
+    padding-left: 120px;
   }
 
   @media screen and (max-width: 1440px) {
-    padding: 0 80px;
+    padding-right: 80px;
+    padding-left: 80px;
   }
 
   @media screen and (max-width: 1140px) {
-    padding: 0 40px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   @media screen and (max-width: 500px) {
-    padding: 0 20px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }

@@ -17,7 +17,7 @@ const swiperAutopark = new Swiper('.swiper-container_autopark', {
 
   // адаптивность
   breakpoints: {
-    320: {
+    360: {
       slidesPerView:2,
       spaceBetween: 10,
     },

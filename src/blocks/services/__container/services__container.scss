@@ -1,0 +1,22 @@
+.services__container {
+  @include margins;
+
+  display: grid;
+  column-gap: 13px;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, minmax(230px, 290px));
+  padding-top: 57px;
+  padding-bottom: 73px;
+  row-gap: 13px;
+
+  @media screen and (max-width: 1040px) {
+    grid-template-columns: repeat(2, minmax(230px, 290px));
+  }
+
+  @media screen and (max-width: 550px) {
+    grid-template-columns: repeat(2, minmax(100px, 158px));
+    padding-top: 20px;
+    padding-bottom: 17px;
+  }
+}
