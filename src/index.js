@@ -11,24 +11,21 @@ const swiperAutopark = new Swiper('.swiper-container_autopark', {
     nextEl: '.swiper-button-next_autopark',
     prevEl: '.swiper-button-prev_autopark',
   },
-  // количество слайдов
-  slidesPerView: 3,
-
-  // размер отступа
-  spaceBetween: 25,
 
   //бесконечность
   loop: true,
 
   // адаптивность
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView:1,
-  //   },
-  //   1040: {
-  //     slidesPerView: 3
-  //   }
-  // }
+  breakpoints: {
+    320: {
+      slidesPerView:2,
+      spaceBetween: 10,
+    },
+    1040: {
+      slidesPerView: 3, // количество слайдов
+      spaceBetween: 25, // размер отступа
+    }
+  }
 
 });
 

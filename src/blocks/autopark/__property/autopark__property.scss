@@ -17,4 +17,10 @@
       white-space: pre;
     }
   }
+
+  @media screen and (max-width: 650px) {
+    li {
+      @include fontValue(normal, normal, 12px, 150%);
+    }
+  }
 }

@@ -26,6 +26,9 @@ $text-color-white: #fff;
 }
 
 @mixin margins {
+  margin: 0 auto;
+  max-width: 1440px;
+
   @media screen and (min-width: 1440px) {
     padding: 0 120px;
   }

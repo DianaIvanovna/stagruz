@@ -1,8 +1,58 @@
 .autopark__card {
-  padding: 15px 27px;
-  max-width: 407px;
-  max-height: 547px;
+  margin: 0 auto;
+  padding: 15px 0;
+  height: 507px;
+  max-width: 380px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
-  background-image: url("/img/background-car.png");
+  background-size: 100% 100%;
+  transition-duration: 2s;
+
+  .button__to-form_autopark {
+    opacity: 0;
+    transition-duration: 1s;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
+
+    .button__to-form_autopark {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .button__to-form_autopark {
+      opacity: 1;
+    }
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    padding: 0 10px;
+    height: 280px;
+    max-width: 200px;
+  }
+
+  @media screen and (max-width: 420px) {
+    padding: 0;
+    height: 240px;
+    max-width: 160px;
+  }
+}
+
+.autopark__card_1 {
+  background-image: url("/img/cars/background-car.png");
+}
+
+.autopark__card_2 {
+  background-image: url("/img/cars/background-car-2.png");
+}
+
+.autopark__card_3 {
+  background-image: url("/img/cars/background-car-3.png");
 }

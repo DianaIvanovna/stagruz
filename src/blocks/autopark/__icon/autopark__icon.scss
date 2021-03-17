@@ -1,3 +1,9 @@
 .autopark__icon {
   margin-right: 16px;
+
+  @media screen and (max-width: 650px) {
+    margin-right: 9px;
+    width: 13px;
+    height: 13px;
+  }
 }

@@ -9,20 +9,57 @@
 .autopark {
   @include margins;
 
+  position: relative;
   margin-top: 200px;
 
+  .button__to-form_autopark {
+    width: 100%;
+
+    @media screen and (max-width: 650px) {
+      display: none;
+    }
+  }
+}
+
+// классы, изменяющие дефолтные стили swiper
+.autopark__container {
+  position: relative;
+  width: 100%;
+
   .swiper-container_autopark {
-    position: relative;
-    border: 1px solid hsl(0, 100%, 50%);
+    padding: 20px 0;
+    width: 100%;
   }
 
   .swiper-button-next_autopark::after {
+    position: absolute;
+    left: calc(100% + 40px);
     font-size: 48px;
     color: #000;
+
+    @media screen and (max-width: 1140px) {
+      left: calc(100% + 20px);
+    }
+
+    @media screen and (max-width: 500px) {
+      left: calc(100% + 10px);
+      font-size: 32px;
+    }
   }
 
   .swiper-button-prev_autopark::after {
+    position: absolute;
+    right: calc(100% + 40px);
     font-size: 48px;
     color: #000;
+
+    @media screen and (max-width: 1140px) {
+      right: calc(100% + 20px);
+    }
+
+    @media screen and (max-width: 500px) {
+      right: calc(100% + 10px);
+      font-size: 32px;
+    }
   }
 }

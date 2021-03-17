@@ -14,4 +14,13 @@
     width: 46px;
     height: 0;
   }
+
+  @media screen and (max-width: 600px) {
+    @include fontValue(normal, 800, 24px, 108.4%);
+
+    &::after {
+      margin: 10px auto 20px;
+      border: 2px solid $attention-color;
+    }
+  }
 }

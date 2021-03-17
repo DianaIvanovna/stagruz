@@ -107,50 +107,8 @@
   background: linear-gradient(180deg, $attention-color 0%, #ff833a 100%);
 }
 
-.button__to-form_autopark {
-  width: 293px;
-}
-
 .button__second {
   border: 1px solid $attention-color;
   color: $title-color;
   background: none;
-}
-
-.swiper-container_my {
-  width: 100%;
-  height: 500px;
-}
-
-.swiper-wrapper_my {
-  border: 1px solid rgb(255, 0, 0);
-  padding: 20px;
-}
-
-.img-slide {
-  text-align: center;
-
-  img {
-    width: 500px;
-    max-width: 100%;
-  }
-}
-
-.swiper-button-next_my::after {
-  font-size: 48px;
-  color: #000;
-}
-
-.swiper-button-prev_my::after {
-  font-size: 48px;
-  color: #000;
-}
-
-.swiper-container_my .swiper-pagination-progressbar {
-  width: 200px;
-  background-color: rgb(125, 11, 129);
-}
-
-.swiper-container_my .swiper-pagination-progressbar-fill {
-  background-color: rgb(17, 78, 33);
 }
