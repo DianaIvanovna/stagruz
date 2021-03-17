@@ -1,0 +1,6 @@
+@import "./__container/photogallery__container.scss";
+@import "./__photo/photogallery__photo.scss";
+
+.photogallery {
+  @include margins;
+}
