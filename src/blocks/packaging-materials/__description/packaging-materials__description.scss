@@ -1,0 +1,26 @@
+.packaging-materials__description {
+  @include fontValue(normal, normal, 12px, 125.4%);
+
+  display: none;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 40px;
+  width: 80%;
+  color: $text-color-description;
+
+  @media screen and (max-width: 1040px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    @include fontValue(normal, normal, 10px, 125.4%);
+
+    margin-bottom: 10px;
+    margin-left: 12px;
+  }
+}

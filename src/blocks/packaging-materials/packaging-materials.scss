@@ -1,0 +1,8 @@
+@import "./__description/packaging-materials__description.scss";
+@import "./__name/packaging-materials__name.scss";
+@import "./__item/packaging-materials__item.scss";
+@import "./__container/packaging-materials__container.scss";
+
+.packaging-materials {
+  @include margins;
+}

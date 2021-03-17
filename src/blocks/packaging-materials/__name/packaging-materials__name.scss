@@ -1,0 +1,53 @@
+.packaging-materials__name {
+  @include fontValue(normal, bold, 18px, 150.4%);
+
+  margin: 0;
+  margin-left: 68px;
+  color: $text-color;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-top: 7px;
+    border: 1px solid $attention-color;
+    width: 63px;
+    height: 0;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    margin-top: 7px;
+    border: 1px solid $attention-color;
+    width: 63px;
+    height: 0;
+  }
+
+  @media screen and (max-width: 1040px) {
+    margin-left: 40px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    @include fontValue(normal, bold, 16px, 150.4%);
+
+    margin-left: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    @include fontValue(normal, bold, 10px, 150.4%);
+
+    margin-left: 12px;
+
+    &::after {
+      width: 17px;
+    }
+  }
+}
