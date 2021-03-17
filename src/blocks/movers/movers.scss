@@ -1,0 +1,8 @@
+@import "./__container/movers__container.scss";
+@import "./__img/movers__img.scss";
+@import "./__text/movers__text.scss";
+@import "./__title/movers__title.scss";
+
+.movers {
+  @include margins;
+}

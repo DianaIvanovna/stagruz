@@ -1,0 +1,12 @@
+.movers__text {
+  @include fontValue(normal, normal, 18px, 155.4%);
+
+  margin: 0;
+  width: 95%;
+  text-align: justify;
+  color: $text-color-second;
+
+  @media screen and (max-width: 600px) {
+    @include fontValue(normal, normal, 16px, 155.4%);
+  }
+}

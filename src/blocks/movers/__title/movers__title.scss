@@ -1,0 +1,17 @@
+.movers__title {
+  @include fontValue(normal, 800, 24px, 108.4%);
+
+  margin: 0;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  width: 95%;
+  color: $title-color;
+
+  @media screen and (max-width: 900px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    @include fontValue(normal, 800, 18px, 108.4%);
+  }
+}
