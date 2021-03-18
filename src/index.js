@@ -29,6 +29,33 @@ const swiperAutopark = new Swiper('.swiper-container_autopark', {
 
 });
 
+const swiperPreview = new Swiper('.swiper-container_preview', {
+  // стрелки
+  navigation: {
+    nextEl: '.swiper-button-next_preview',
+    prevEl: '.swiper-button-prev_preview',
+  },
+  //бесконечность
+  loop: true,
+  slidesPerView:1,
+  pagination: {
+    el: '.swiper-pagination',
+    type: "progressbar",
+  },
+
+});
+
+let slideAll = document.querySelector('.swiper-number_end');
+let slideCurrent =  document.querySelector('.swiper-number_start');
+
+slideAll.innerHTML = '03';
+slideCurrent.innerHTML = '01';
+
+swiperPreview.on('slideChange', function(){
+  let current = ++swiperPreview.realIndex;
+  slideCurrent.innerHTML = '0' + current;
+})
+
 // const swiper = new Swiper('.swiper-container_my', {
 //   // стрелки
 //   navigation: {
@@ -38,12 +65,12 @@ const swiperAutopark = new Swiper('.swiper-container_autopark', {
 //   pagination: {
 //     el: '.swiper-pagination',
 //     // фракции
-//     // type: 'fraction',
-//     // renderFraction: function (currentClass, totalClass) {
-//     //   return 'Фото <span class="' + currentClass + '"></span>' + ' из ' + '<span class="' + totalClass + '"></span>';
-//     // }
+//     type: 'fraction',
+//     renderFraction: function (currentClass, totalClass) {
+//       return 'Фото <span class="' + currentClass + '"></span>' + ' из ' + '<span class="' + totalClass + '"></span>';
+//     }
 //     // прогрессбар
-//     type: "progressbar",
+//     // type: "progressbar",
 
 //   },
 //   // количество слайдов
@@ -57,6 +84,7 @@ const swiperAutopark = new Swiper('.swiper-container_autopark', {
 //   //бесконечность
 //   loop: true,
 
+//   scrollbar: true,
 //   // адаптивность
 //   // breakpoints: {
 //   //   320: {

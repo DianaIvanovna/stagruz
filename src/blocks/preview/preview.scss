@@ -1,0 +1,214 @@
+.preview {
+  @include margins;
+
+  position: relative;
+  border: 1px solid rgb(17, 78, 33);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.preview__elipse {
+  position: absolute;
+  right: -438px;
+  top: -632px;
+  z-index: -1;
+  border-radius: 50%;
+  width: 1211px;
+  height: 1211px;
+  background: $attention-color;
+  opacity: 0.2;
+}
+
+.preview__elipse_2 {
+  position: absolute;
+  right: -483px;
+  top: -618px;
+  z-index: -1;
+  border-radius: 50%;
+  width: 1211px;
+  height: 1211px;
+  background: linear-gradient(189.73deg, #ff8339 45.63%, $attention-color 98.31%);
+}
+
+@media screen and (max-width: 900px) {
+  .preview__elipse {
+    right: -605px;
+    top: -987px;
+  }
+
+  .preview__elipse_2 {
+    right: -655px;
+    top: -987px;
+  }
+}
+
+.preview__slogan {
+  @include fontValue(normal, normal, 10px, 150%);
+
+  margin: 0;
+  margin-bottom: 13px;
+  letter-spacing: 0.24em;
+  color: $text-color-second;
+}
+
+.preview__container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.preview__title {
+  @include fontValue(normal, 800, 48px, 108.4%);
+
+  margin: 0;
+  margin-bottom: 13px;
+  width: 315px;
+  color: $title-color;
+}
+
+.preview__line {
+  display: block;
+  margin-right: 22px;
+  border: 4px solid $attention-color;
+  width: 46px;
+  height: 0;
+}
+
+.preview__description {
+  @include fontValue(normal, normal, 18px, 150.4%);
+
+  margin: 0;
+  margin-bottom: 23px;
+  width: 405px;
+  color: $text-color-second;
+}
+
+.preview__title-container {
+  display: flex;
+}
+
+// preview swiper
+
+.swiper-container_preview {
+  border: 1px solid hsl(0, 100%, 50%);
+  width: 50%;
+  height: 531px;
+  min-width: 0;
+
+}
+
+.swiper-pagination-container_preview {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+
+  .swiper-pagination_preview {
+    position: static;
+    width: 238px;
+    height: 2px;
+
+    .swiper-pagination-progressbar {
+      background: #000;
+    }
+
+    .swiper-pagination-progressbar-fill {
+      height: 2px;
+      background:#000;
+    }
+  }
+
+  .swiper-button-prev_preview {
+    position: static;
+
+    &::after {
+      font-size: 18px;
+      color: $text-color-second;
+    }
+  }
+
+  .swiper-button-next_preview {
+    position: static;
+
+    &::after {
+      font-size: 18px;
+      color: $text-color-second;
+    }
+  }
+
+}
+
+.swiper-slide_preview {
+  display: flex;
+  justify-content: center;
+}
+
+.preview__img {
+  width: 100%;
+  object-fit: contain;
+  transform: rotate(4deg);
+}
+
+.preview__property-text {
+  @include fontValue(normal, bold, 14px, 150.4%);
+
+  margin: 0;
+  width: 100%;
+  color: $text-color-second;
+}
+
+.preview__weight {
+  font-size: 30px;
+  white-space: pre-wrap;
+}
+
+.preview__volume {
+  font-size: 30px;
+  white-space: pre-wrap;
+}
+
+.preview__property-name {
+  @include fontValue(normal, normal, 14px, 150.4%);
+
+  margin: 0;
+  width: 100%;
+  color: $text-color-second;
+}
+
+.preview__property {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 25px;
+  width: 180px;
+}
+
+.preview__line-vertical {
+  border: 2px solid $attention-border;
+  width: 0;
+  height: 116.5px;
+}
+
+.preview__car-characteristics {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.preview__car-description {
+  justify-self: end;
+  max-width: 400px;
+}
+
+.preview__car-name {
+  @include fontValue(normal, bold, 18px, 150.4%);
+
+  margin: 0;
+  color: $text-color-second;
+}
+
+.preview__car-text {
+  @include fontValue(normal, normal, 18px, 150.4%);
+
+  margin: 0;
+  color: $text-color-second;
+}
