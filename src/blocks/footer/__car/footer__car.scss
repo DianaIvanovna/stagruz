@@ -2,19 +2,13 @@
   position: absolute;
   left: 20px;
   bottom: 76px;
-
-  @media screen and (max-width: 1300px) {
-    transform: translateX(-40%);
-  }
+  transform: translateX(-100%);
 
   @media screen and (max-width: 900px) {
     bottom: 35px;
-    transform: translateX(-60%);
   }
 
   @media screen and (max-width: 600px) {
-    transform: translateX(-75%);
-
     img {
       bottom: 40px;
       width: 290px;
@@ -26,22 +20,66 @@
   position: absolute;
   right: 20px;
   bottom: 76px;
-
-  @media screen and (max-width: 1300px) {
-    transform: translateX(40%);
-  }
+  transform: translateX(100%);
 
   @media screen and (max-width: 900px) {
     bottom: 35px;
-    transform: translateX(60%);
   }
 
   @media screen and (max-width: 600px) {
-    transform: translateX(75%);
+    bottom: 35px;
 
     img {
       bottom: 40px;
       width: 290px;
     }
+  }
+}
+
+.footer__car_anim-1900 {
+  .footer__car_left {
+    transform: translateX(0%);
+    transition: all 3s ease 0s;
+  }
+
+  .footer__car_right {
+    transform: translateX(0%);
+    transition: all 3s ease 0s;
+  }
+}
+
+.footer__car_anim-1300 {
+  .footer__car_left {
+    transform: translateX(-40%);
+    transition: all 2s ease 0s;
+  }
+
+  .footer__car_right {
+    transform: translateX(40%);
+    transition: all 2s ease 0s;
+  }
+}
+
+.footer__car_anim-900 {
+  .footer__car_left {
+    transform: translateX(-60%);
+    transition: all 2s ease 0s;
+  }
+
+  .footer__car_right {
+    transform: translateX(60%);
+    transition: all 2s ease 0s;
+  }
+}
+
+.footer__car_anim-600 {
+  .footer__car_left {
+    transform: translateX(-75%);
+    transition: all 1s ease 0s;
+  }
+
+  .footer__car_right {
+    transform: translateX(75%);
+    transition: all 1s ease 0s;
   }
 }

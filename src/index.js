@@ -4,6 +4,7 @@ import "./index.html";
 import Swiper from 'swiper'; // import Swiper JS
 import SwiperCore, { Navigation, Pagination, Scrollbar } from 'swiper/core'; // Import Swiper and modules
 import Header from './js/Header';
+import Animation from './js/Animation';
 
 (function () {
   const header = new Header();
@@ -107,4 +108,29 @@ import Header from './js/Header';
     slideCurrent.innerHTML = '0' + current;
   })
 
+})();
+
+(function () {
+  // анимация не работает с медиа запросом, пришлось делать так..
+  const windowWidth = window.innerWidth;
+  let classActiveCar;
+
+  if (windowWidth <= 600) classActiveCar = "footer__car_anim-600";
+  else if (windowWidth <= 900) classActiveCar = "footer__car_anim-900";
+  else if (windowWidth <= 1300) classActiveCar = "footer__car_anim-1300";
+  else classActiveCar = "footer__car_anim-1900";
+
+  console.log(classActiveCar);
+  const animationObject = [
+    {
+      item: ".section__title", // объекты с каким классом имеют анимацию при скролле
+      classActive: "section__title_anim", // класс для добавления анимации
+    },
+    {
+      item: ".footer__down-container",
+      classActive: classActiveCar,
+    },
+  ];
+
+  const animation = new Animation(animationObject);
 })();
