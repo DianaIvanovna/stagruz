@@ -295,7 +295,7 @@
           <source media="(min-width: 1100px)" srcset="./img/mover.png" type="image/png">
           <source media="(min-width: 800px)" srcset="./images/mover-smalle2e47a38018bb5f979d3.webp" type="image/webp">
           <source media="(min-width: 800px)" srcset="./img/mover-small.png" type="image/png">
-            <source media="(min-width: 500px)" srcset="./images/mover29ec253ef3243f17f67e.webp" type="image/webp">
+          <source media="(min-width: 500px)" srcset="./images/mover29ec253ef3243f17f67e.webp" type="image/webp">
           <source media="(min-width: 500px)" srcset="./img/mover.png" type="image/png">
           <img src="./img/mover-small.png" alt="Вантажники">
         </picture>
@@ -308,21 +308,30 @@
       <h2 class="section__title">Пакувальні матеріали</h2>
       <div class="packaging-materials__container">
         <div class="packaging-materials__item">
-          <img src="./img/packaging-materials/scotch.png" alt="Скотч">
+          <picture class="packaging-materials__img">
+            <source srcset="./images/scotch71dab60e4c7a25c3cfe9.webp" type="image/webp">
+            <img src="./img/packaging-materials/scotch.png" alt="Скотч">
+          </picture>
           <div>
             <p class="packaging-materials__name">Скотч</p>
             <p class="packaging-materials__description">Обмотаємо та закріпимо, немає нічого, що не зафіксувати скотчем</p>
           </div>
         </div>
         <div class="packaging-materials__item">
-          <img src="./img/packaging-materials/cardboard.png" alt="Гофрокартон">
+          <picture class="packaging-materials__img">
+            <source srcset="./images/cardboard6f73f148afb2cf256cd2.webp" type="image/webp">
+            <img src="./img/packaging-materials/cardboard.png" alt="Гофрокартон">
+          </picture>
           <div>
             <p class="packaging-materials__name">Гофрокартон</p>
             <p class="packaging-materials__description">Усі кути меблів бережливо захищають на раз</p>
           </div>
         </div>
         <div class="packaging-materials__item">
-          <img src="./img/packaging-materials/stretch-film.png" alt="Стрейч-плівка">
+          <picture class="packaging-materials__img">
+            <source srcset="./images/stretch-film0e482972844955ca26ed.webp" type="image/webp">
+            <img src="./img/packaging-materials/stretch-film.png" alt="Стрейч-плівка">
+          </picture>
           <div>
             <p class="packaging-materials__name">Стрейч-плівка</p>
             <p class="packaging-materials__description">Кожен груз без виключення обмотуємо плівкою</p>
@@ -338,13 +347,54 @@
     <section class="photogallery">
       <h2 class="section__title">Фотогалерея</h2>
       <div class="photogallery__container">
-        <img src="./img/photogallery/photo-1.png" alt="photo stagruz" class="photogallery__photo">
-        <img src="./img/photogallery/photo-2.png" alt="photo stagruz" class="photogallery__photo">
-        <img src="./img/photogallery/photo-3.png" alt="photo stagruz" class="photogallery__photo">
-        <img src="./img/photogallery/photo-4.png" alt="photo stagruz" class="photogallery__photo">
-        <img src="./img/photogallery/photo-5.png" alt="photo stagruz" class="photogallery__photo">
-        <img src="./img/photogallery/photo-3.png" alt="photo stagruz" class="photogallery__photo">
-        <img src="./img/photogallery/photo-4.png" alt="photo stagruz" class="photogallery__photo">
+        <picture class="photogallery__photo">
+          <source media="(min-width: 800px)" srcset="./images/photo-1b930dd874aa745a1f4c2b930dd874aa745a1f4c2.webp" type="image/webp">
+          <source media="(min-width: 800px)" srcset="./images/photo-1b930dd874aa745a1f4c2b930dd874aa745a1f4c2.png" type="image/png">
+          <source srcset="./images/photo-1-small1ad6387f34448da912fc.webp" type="image/webp">
+          <img src="./images/photo-1-small1ad6387f34448da912fc.png" alt="photo stagruz">
+        </picture>
+
+        <picture class="photogallery__photo">
+          <source media="(min-width: 800px)" srcset="./images/photo-2ee64e98f530e89ffdb9eee64e98f530e89ffdb9e.webp" type="image/webp">
+          <source media="(min-width: 800px)" srcset="./images/photo-2ee64e98f530e89ffdb9eee64e98f530e89ffdb9e.png" type="image/png">
+          <source srcset="./images/photo-2-smalle93b65b71c476cdefcfa.webp" type="image/webp">
+          <img src="./images/photo-2-smalle93b65b71c476cdefcfa.png" alt="photo stagruz">
+        </picture>
+
+        <picture class="photogallery__photo">
+          <source media="(min-width: 800px)" srcset="./images/photo-3f572975c87a6cd21fa4af572975c87a6cd21fa4a.webp" type="image/webp">
+          <source media="(min-width: 800px)" srcset="./images/photo-3f572975c87a6cd21fa4af572975c87a6cd21fa4a.png" type="image/png">
+          <source  srcset="./images/photo-3-smallce3d23920947a02fa2b2.webp" type="image/webp">
+          <img src="./images/photo-3-smallce3d23920947a02fa2b2.png" alt="photo stagruz">
+        </picture>
+
+        <picture class="photogallery__photo">
+          <source media="(min-width: 800px)" srcset="./images/photo-4342d77c732eb7ce00f3f342d77c732eb7ce00f3f.webp" type="image/webp">
+          <source media="(min-width: 800px)" srcset="./images/photo-4342d77c732eb7ce00f3f342d77c732eb7ce00f3f.png" type="image/png">
+          <source srcset="./images/photo-4-small3d9d5e1cf5224a2156e2.webp" type="image/webp">
+          <img src="./images/photo-4-small3d9d5e1cf5224a2156e2.png" alt="photo stagruz">
+        </picture>
+
+        <picture class="photogallery__photo">
+          <source media="(min-width: 800px)" srcset="./images/photo-54a2626e3941dabddff304a2626e3941dabddff30.webp" type="image/webp">
+          <source media="(min-width: 800px)" srcset="./images/photo-54a2626e3941dabddff304a2626e3941dabddff30.png" type="image/png">
+          <source srcset="./images/photo-5-smallcd67418263e659d9ad42.webp" type="image/webp">
+          <img src="./images/photo-5-smallcd67418263e659d9ad42.png" alt="photo stagruz">
+        </picture>
+
+        <picture class="photogallery__photo">
+          <source media="(min-width: 800px)" srcset="./images/photo-3f572975c87a6cd21fa4af572975c87a6cd21fa4a.webp" type="image/webp">
+          <source media="(min-width: 800px)" srcset="./images/photo-3f572975c87a6cd21fa4af572975c87a6cd21fa4a.png" type="image/png">
+          <source  srcset="./images/photo-3-smallce3d23920947a02fa2b2.webp" type="image/webp">
+          <img src="./images/photo-3-smallce3d23920947a02fa2b2.png" alt="photo stagruz">
+        </picture>
+
+        <picture class="photogallery__photo">
+          <source media="(min-width: 800px)" srcset="./images/photo-4342d77c732eb7ce00f3f342d77c732eb7ce00f3f.webp" type="image/webp">
+          <source media="(min-width: 800px)" srcset="./images/photo-4342d77c732eb7ce00f3f342d77c732eb7ce00f3f.png" type="image/png">
+          <source srcset="./images/photo-4-small3d9d5e1cf5224a2156e2.webp" type="image/webp">
+          <img src="./images/photo-4-small3d9d5e1cf5224a2156e2.png" alt="photo stagruz">
+        </picture>
       </div>
     </section>
     <!-- photogallery END -->
@@ -375,8 +425,16 @@
       </div>
       <div class="footer__down">
         <div class="footer__down-container">
-          <img src="./img/footer-car-1.png" alt="photo car" class="footer__car_left">
-          <img src="./img/footer-car-2.png" alt="photo car" class="footer__car_right">
+
+          <picture class="footer__car_left">
+            <source srcset="./images/footer-car-1c193c035f59df0571718c193c035f59df0571718.webp" type="image/webp">
+            <img src="./images/footer-car-1c193c035f59df0571718c193c035f59df0571718.png" alt="photo stagruz">
+          </picture>
+          <picture class="footer__car_right">
+            <source srcset="./images/footer-car-248826d66a0f50aa7f89b48826d66a0f50aa7f89b.webp" type="image/webp">
+            <img src="./images/footer-car-248826d66a0f50aa7f89b48826d66a0f50aa7f89b.png" alt="photo stagruz">
+          </picture>
+
           <p class="footer__confidense">copyright © 2021  Усі права захищені</p>
           <img src="./img/logo-opacity.png" alt="logo" width="208px" height="100px" class="footer__logo footer__logo_opacity">
           <img src="./img/logo.png" alt="logo" width="131px" height="61px" class="footer__logo footer__logo_dark">

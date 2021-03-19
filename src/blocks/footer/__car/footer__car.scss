@@ -13,9 +13,12 @@
   }
 
   @media screen and (max-width: 600px) {
-    bottom: 40px;
-    width: 290px;
     transform: translateX(-75%);
+
+    img {
+      bottom: 40px;
+      width: 290px;
+    }
   }
 }
 
@@ -34,8 +37,11 @@
   }
 
   @media screen and (max-width: 600px) {
-    bottom: 40px;
-    width: 290px;
     transform: translateX(75%);
+
+    img {
+      bottom: 40px;
+      width: 290px;
+    }
   }
 }
