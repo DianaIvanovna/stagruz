@@ -1,0 +1,18 @@
+.button {
+  @include fontValue(normal, bold, 18px, 150.4%);
+
+  border: none;
+  width: 220px;
+  height: 50px;
+}
+
+.button__to-form {
+  color: $text-color-white;
+  background: linear-gradient(180deg, $attention-color 0%, #ff833a 100%);
+}
+
+.button__second {
+  border: 1px solid $attention-color;
+  color: $title-color;
+  background: none;
+}

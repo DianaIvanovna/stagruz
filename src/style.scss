@@ -12,35 +12,13 @@
 @import "./blocks/photogallery/photogallery.scss";
 @import "./blocks/footer/footer.scss";
 @import "./blocks/swiper/swiper.scss";
+@import "./blocks/button/button.scss";
 
 .content {
   overflow: hidden;
   width: 100%;
   height: 100%;
 }
-
-// стили для кнопок
-
-.button {
-  @include fontValue(normal, bold, 18px, 150.4%);
-
-  border: none;
-  width: 220px;
-  height: 50px;
-}
-
-.button__to-form {
-  color: $text-color-white;
-  background: linear-gradient(180deg, $attention-color 0%, #ff833a 100%);
-}
-
-.button__second {
-  border: 1px solid $attention-color;
-  color: $title-color;
-  background: none;
-}
-
-// стили для кнопок
 
 .section__title {
   @include fontValue(normal, 800, 36px, 108.4%);
@@ -69,4 +47,16 @@
       border: 2px solid $attention-color;
     }
   }
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
 }

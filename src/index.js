@@ -38,6 +38,7 @@ import Header from './js/Header';
     },
     loop: true,
     slidesPerView:1,
+    slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
       type: "progressbar",
