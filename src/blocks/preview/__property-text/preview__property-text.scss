@@ -1,0 +1,12 @@
+.preview__property-text {
+  @include fontValue(normal, bold, 14px, 150.4%);
+
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: $text-color-second;
+
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+  }
+}

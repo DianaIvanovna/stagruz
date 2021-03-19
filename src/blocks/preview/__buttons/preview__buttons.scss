@@ -1,0 +1,19 @@
+.preview__buttons {
+  display: none;
+  margin-left: 75px;
+
+  @media screen and (max-width: 1100px) {
+    display: block;
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 320px;
+
+    .button__to-form {
+      width: 100%;
+    }
+
+    .button__second {
+      display: none;
+    }
+  }
+}

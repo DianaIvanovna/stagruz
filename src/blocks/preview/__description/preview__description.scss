@@ -1,0 +1,20 @@
+.preview__description {
+  @include fontValue(normal,normal,18px,150.4%);
+
+  display: none;
+  margin: 0;
+  margin-bottom: 23px;
+  margin-left: 75px;
+  width: 405px;
+  color: $text-color-second;
+
+  @media screen and (max-width: 600px) {
+    @include fontValue(normal,normal,13px,150.4%);
+
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 286px;
+    text-align: center;
+    color: $text-color-second;
+  }
+}

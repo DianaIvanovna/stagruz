@@ -1,0 +1,6 @@
+.preview__car-name {
+  @include fontValue(normal, bold, 18px, 150.4%);
+
+  margin: 0;
+  color: $text-color-second;
+}

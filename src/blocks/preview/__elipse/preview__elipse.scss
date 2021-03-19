@@ -1,0 +1,46 @@
+.preview__elipse {
+  position: absolute;
+  right: -438px;
+  top: -632px;
+  z-index: -1;
+  border-radius: 50%;
+  width: 1211px;
+  height: 1211px;
+  background: $attention-color;
+  opacity: 0.2;
+}
+
+.preview__elipse_2 {
+  position: absolute;
+  right: -483px;
+  top: -618px;
+  z-index: -1;
+  border-radius: 50%;
+  width: 1211px;
+  height: 1211px;
+  background: linear-gradient(189.73deg, #ff8339 45.63%, $attention-color 98.31%);
+}
+
+@media screen and (max-width: 900px) {
+  .preview__elipse {
+    right: -605px;
+    top: -987px;
+  }
+
+  .preview__elipse_2 {
+    right: -655px;
+    top: -987px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .preview__elipse {
+    right: -555px;
+    top: -987px;
+  }
+
+  .preview__elipse_2 {
+    right: -605px;
+    top: -987px;
+  }
+}

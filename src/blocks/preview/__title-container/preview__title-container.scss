@@ -1,0 +1,39 @@
+.preview__title-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+  min-width: 525px;
+
+  .preview__description {
+    display: block;
+  }
+
+  .preview__buttons {
+    display: block;
+  }
+
+  .preview__car-characteristics {
+    display: flex;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .preview__buttons {
+      display: none;
+    }
+
+    .preview__car-characteristics {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    min-width: auto;
+    max-width: 210px;
+
+    .preview__description {
+      display: none;
+    }
+  }
+}

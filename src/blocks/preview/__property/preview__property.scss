@@ -1,0 +1,54 @@
+.preview__property {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    border: 2px solid $attention-border;
+    width: 0;
+    height: 90px;
+  }
+
+  &:first-of-type::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    border: 2px solid $attention-border;
+    width: 0;
+    height: 90px;
+  }
+
+  @media screen and (max-width: 600px) {
+    &::after {
+      display: none;
+    }
+
+    &:first-of-type {
+      padding-right: 10px;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        border: 2px solid $attention-border;
+        width: 0;
+        height: 90px;
+      }
+    }
+  }
+}

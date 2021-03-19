@@ -47,42 +47,66 @@
     </header>
     <!-- HEADER END -->
 
+    <!-- preview START -->
     <section class="preview">
-      <div class="preview__elipse">
-      </div>
-      <div class="preview__elipse_2">
-      </div>
-      <div class="preview__container">
+      <!-- круги на фоне -->
+      <div class="preview__elipse"></div>
+      <div class="preview__elipse_2"></div>
+      <!-- круги на фоне -->
 
-        <div>
-          <p class="preview__slogan">ПЕРЕЇЗД - ЦЕ ПРОСТО</p>
-          <div class="preview__title-container">
-            <h1 class="preview__line"></h1>
-            <div>
-              <h1 class="preview__title">Вантажні перевезення</h1>
-              <p class="preview__description">Ми потурбуємося про безпечне перевезення вашого вантажу по Полтаві та області </p>
-              <button class="button button__to-form">Залишити заявку</button>
-              <button class="button button__second">Дізнатися більше</button>
-            </div>
+      <div class="preview__title-container">
+        <p class="preview__slogan">ПЕРЕЇЗД - ЦЕ ПРОСТО</p>
+        <div class="preview__title">
+          <h1>Вантажні перевезення</h1>
+        </div>
+        <p class="preview__description">Ми потурбуємося про безпечне перевезення вашого вантажу по Полтаві та області </p>
+        <div class="preview__buttons">
+          <button class="button button__to-form">Залишити заявку</button>
+          <button class="button button__second">Дізнатися більше</button>
+        </div>
+
+        <!-- свойства машины start -->
+        <div class="preview__car-characteristics">
+          <!-- <div class="preview__line-vertical"></div> -->
+          <div class="preview__property">
+            <img src="./img/icon/escalator.svg" alt="icon escalator" width="52px" height="52px" class="preview__icon">
+
+            <p class="preview__property-text">до<span class="preview__weight preview__weight_loadCapacity"> 5 </span>тон</p>
+            <p class="preview__property-name">Вантажопідйомність</p>
+          </div>
+          <!-- <div class="preview__line-vertical"></div> -->
+          <div class="preview__property">
+            <img src="./img/icon/truck.svg" alt="icon truck" width="52px" height="52px" class="preview__icon">
+            <p class="preview__property-text">до<span class="preview__weight preview__weight_carVolume"> 40 </span>куб</p>
+            <p class="preview__property-name">Об `єм</p>
+          </div>
+          <!-- <div class="preview__line-vertical"></div> -->
+        </div>
+        <!-- свойства машины start -->
+    </div>
+
+      <!-- слайдер start -->
+      <div class="swiper-container swiper-container_preview">
+        <div class="swiper-wrapper swiper-wrapper_preview">
+          <div class="swiper-slide swiper-slide_preview ">
+            <picture>
+              <source media="(min-width: 600px)" srcset="./img/cars/car-1-big.png">
+              <img class="preview__img" src="./img/cars/car-1.png" alt="photo car">
+            </picture>
+          </div>
+
+          <div class="swiper-slide swiper-slide_preview ">
+            <source media="(min-width: 600px)" srcset="./img/cars/car-2-big.png">
+            <img class="preview__img" src="./img/cars/car-2.png" alt="photo car">
+          </div>
+
+          <div class="swiper-slide swiper-slide_preview  ">
+            <source media="(min-width: 600px)" srcset="./img/cars/car-3-big.png">
+            <img class="preview__img" src="./img/cars/car-3.png" alt="photo car">
           </div>
         </div>
 
-
-        <div class="swiper-container swiper-container_preview">
-          <div class="swiper-wrapper swiper-wrapper_preview">
-            <div class="swiper-slide swiper-slide_preview ">
-              <img class="preview__img" src="./img/cars/car-1.png" alt="photo car">
-            </div>
-
-            <div class="swiper-slide swiper-slide_preview ">
-              <img class="preview__img" src="./img/cars/car-2.png" alt="photo car">
-            </div>
-
-            <div class="swiper-slide swiper-slide_preview  ">
-              <img class="preview__img" src="./img/cars/car-3.png" alt="photo car">
-            </div>
-          </div>
-
+        <div class="preview__car-description">
           <div class="swiper-pagination-container_preview">
             <div class="swiper-button-prev swiper-button-prev_preview"></div>
             <span class="swiper-number swiper-number_start"></span>
@@ -91,34 +115,40 @@
             <div class="swiper-button-next swiper-button-next_preview"></div>
           </div>
 
-        </div>
-      </div>
-      <div class="preview__car-characteristics">
-
-        <div class="preview__line-vertical"></div>
-        <div class="preview__property">
-          <img src="./img/icon/escalator.svg" alt="icon escalator" width="52px" height="52px" class="preview__icon">
-
-          <p class="preview__property-text">від<span class="preview__volume"> 100 </span>кг до<span class="preview__weight"> 5 </span>тон</p>
-          <p class="preview__property-name">Вантажопідйомність</p>
-        </div>
-        <div class="preview__line-vertical"></div>
-        <div class="preview__property">
-          <img src="./img/icon/truck.svg" alt="icon truck" width="52px" height="52px" class="preview__icon">
-          <p class="preview__property-text">від<span class="preview__volume"> 8 </span>куб. до<span class="preview__weight"> 40 </span>куб</p>
-          <p class="preview__property-name">Об `єм</p>
-        </div>
-        <div class="preview__line-vertical"></div>
-
-        <div class="preview__car-description">
           <p class="preview__car-name">Mercedes Benz Sprinter</p>
           <p class="preview__car-text">довжина 3,3, вистота 1,8. ширина 1.7</p>
         </div>
+      </div>
+      <!-- слайдер end -->
 
+      <p class="preview__description">Ми потурбуємося про безпечне перевезення вашого вантажу по Полтаві та області </p>
+
+      <!-- свойства машины start -->
+      <div class="preview__car-characteristics">
+        <!-- <div class="preview__line-vertical"></div> -->
+        <div class="preview__property">
+          <img src="./img/icon/escalator.svg" alt="icon escalator" width="52px" height="52px" class="preview__icon">
+
+          <p class="preview__property-text">до<span class="preview__weight preview__weight_loadCapacity"> 5 </span>тон</p>
+          <p class="preview__property-name">Вантажопідйомність</p>
+        </div>
+        <!-- <div class="preview__line-vertical"></div> -->
+        <div class="preview__property">
+          <img src="./img/icon/truck.svg" alt="icon truck" width="52px" height="52px" class="preview__icon">
+          <p class="preview__property-text">до<span class="preview__weight preview__weight_carVolume"> 40 </span>куб</p>
+          <p class="preview__property-name">Об `єм</p>
+        </div>
+        <!-- <div class="preview__line-vertical"></div> -->
+      </div>
+      <!-- свойства машины start -->
+
+      <div class="preview__buttons">
+        <button class="button button__to-form">Залишити заявку</button>
+        <button class="button button__second">Дізнатися більше</button>
       </div>
 
-
     </section>
+    <!-- preview END -->
 
     <!-- SERVICES START -->
     <section class="services">

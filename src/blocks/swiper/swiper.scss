@@ -1,0 +1,73 @@
+// переопределение стиля swiper
+.swiper-pagination-container_preview {
+  position: static;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: -40px;
+
+  .swiper-pagination_preview {
+    position: static;
+    width: 238px;
+    height: 2px;
+
+    .swiper-pagination-progressbar {
+      background: #000;
+    }
+
+    .swiper-pagination-progressbar-fill {
+      height: 2px;
+      background:#000;
+    }
+  }
+
+  .swiper-button-prev_preview {
+    position: static;
+    margin: 0;
+
+    &::after {
+      font-size: 18px;
+      color: $text-color-second;
+    }
+  }
+
+  .swiper-button-next_preview {
+    position: static;
+    margin: 0;
+
+    &::after {
+      font-size: 18px;
+      color: $text-color-second;
+    }
+  }
+}
+
+.swiper-container_preview {
+  margin: 0;
+  width: 50%;
+  height: max-content;
+  min-width: 0;
+
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .preview__car-description {
+      display: none;
+    }
+  }
+}
+
+.swiper-number {
+  @include fontValue(normal, normal, 18px, 150.4%);
+
+  margin: 0 8px;
+  color: $text-color-second;
+}
+
+.swiper-slide_preview {
+  display: flex;
+  justify-content: center;
+}

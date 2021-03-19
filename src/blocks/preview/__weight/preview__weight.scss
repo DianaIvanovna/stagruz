@@ -1,0 +1,8 @@
+.preview__weight {
+  font-size: 30px;
+  white-space: pre-wrap;
+
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+  }
+}

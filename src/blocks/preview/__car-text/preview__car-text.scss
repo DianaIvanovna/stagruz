@@ -1,0 +1,6 @@
+.preview__car-text {
+  @include fontValue(normal, normal, 18px, 150.4%);
+
+  margin: 0;
+  color: $text-color-second;
+}

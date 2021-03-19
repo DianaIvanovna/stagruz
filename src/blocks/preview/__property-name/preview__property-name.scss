@@ -1,0 +1,8 @@
+.preview__property-name {
+  @include fontValue(normal, normal, 14px, 150.4%);
+
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: $text-color-second;
+}
