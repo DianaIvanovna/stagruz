@@ -28,14 +28,6 @@ $text-color-white: #fff;
   line-height: $height;
 }
 
-@mixin fontValueRoboto($style, $weight, $size, $height) {
-  font-family: "Roboto";
-  font-weight: $weight;
-  font-style: $style;
-  font-size: $size;
-  line-height: $height;
-}
-
 @mixin gradient {
   background: linear-gradient(180deg, #ff904e 0%, #ff8339 100%);
 }

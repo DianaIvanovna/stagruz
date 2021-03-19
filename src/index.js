@@ -120,7 +120,6 @@ import Animation from './js/Animation';
   else if (windowWidth <= 1300) classActiveCar = "footer__car_anim-1300";
   else classActiveCar = "footer__car_anim-1900";
 
-  console.log(classActiveCar);
   const animationObject = [
     {
       item: ".section__title", // объекты с каким классом имеют анимацию при скролле
