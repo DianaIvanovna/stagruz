@@ -1,8 +1,18 @@
 .movers__img {
-  width: 50%;
-  object-fit: contain;
+  display: block;
+  min-width: 50%;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
 
   @media screen and (max-width: 800px) {
-    width: 100%;
+    min-width: 100%;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
   }
 }
