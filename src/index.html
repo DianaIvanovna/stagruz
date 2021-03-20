@@ -14,24 +14,24 @@
       <img src="./img/logo.png" class="header__logo" width="124px" height="58px" alt="logo">
       <nav class="header__menu">
         <ul class="header__links">
-          <li class="header__link header__link_active">
-            <a href="" class="">НАШІ ПОСЛУГИ</a>
+          <li class="header__link">
+            <a href="#Services" class="">НАШІ ПОСЛУГИ</a>
           </li>
           <li class="header__link">
-            <a href="" class="">АВТОПАРК</a>
+            <a href="#Autopark" class="">АВТОПАРК</a>
           </li>
           <li class="header__link">
-            <a href="" class="">ВАНТАЖНИКИ</a>
+            <a href="#Movers" class="">ВАНТАЖНИКИ</a>
           </li>
           <li class="header__link">
-            <a href="" class="">ФОТОГАЛЕРЕЯ</a>
+            <a href="#Photogallery" class="">ФОТОГАЛЕРЕЯ</a>
           </li>
           <li class="header__link ">
-            <a href="" class="">КОНТАКТИ</a>
+            <a href="#Footer" class="">КОНТАКТИ</a>
           </li>
         </ul>
         <div>
-          <a href="" class="header__icon">
+          <a href="https://www.instagram.com/stagruz/?igshid=rrzqx7afbdc" class="header__icon">
             <img src="./img/icon/instagram.svg" class="" width="22px" height="22px" alt="instagram">
           </a>
           <a href="" class="header__icon">
@@ -41,14 +41,17 @@
       </nav>
       <div class="header__callme">
         <img src="./img/icon/phone.svg" class="header__icon" width="20px" height="20px" alt="icon phone">
-        <p class="header__phone">(095) 124-84-43 (066) 614-17-26</p>
+        <div class="header__phone">
+          <a href="tel:0951248443">(095) 124-84-43</a>
+          <a href="tel:+0666141726">(066) 614-17-26</a>
+        </div>
       </div>
       <img src="./img/icon/mobile-menu.svg" width="30px" height="30px" alt="icon munu" class="header__modile-menu">
     </header>
     <!-- HEADER END -->
 
     <!-- preview START -->
-    <section class="preview">
+    <section class="preview" id="Preview">
       <!-- круги на фоне -->
       <div class="preview__elipse"></div>
       <div class="preview__elipse_2"></div>
@@ -146,6 +149,7 @@
     <!-- preview END -->
 
     <!-- SERVICES START -->
+    <div class="link-for-header" id="Services"></div>
     <section class="services">
       <h2 class="section__title">Наші послуги</h2>
       <div class="services__content">
@@ -189,7 +193,8 @@
     <!-- SERVICES END -->
 
     <!-- autopark START -->
-    <section class="autopark">
+    <div class="link-for-header" id="Autopark"></div>
+    <section class="autopark" id="Autopark">
       <h2 class="section__title">Автопарк</h2>
 
       <div class="autopark__container">
@@ -277,7 +282,8 @@
     <!-- autopark END -->
 
     <!-- movers START -->
-    <section class="movers">
+    <div class="link-for-header" id="Movers"></div>
+    <section class="movers" id="Movers">
       <h2 class="section__title">Вантажники</h2>
       <div class="movers__container">
         <div class="movers__description">
@@ -304,7 +310,7 @@
     <!-- movers END -->
 
     <!-- packaging-materials BEGIN -->
-    <section class="packaging-materials">
+    <section class="packaging-materials" id="Materials">
       <h2 class="section__title">Пакувальні матеріали</h2>
       <div class="packaging-materials__container">
         <div class="packaging-materials__item">
@@ -344,7 +350,8 @@
     <!-- packaging-materials END -->
 
     <!-- photogallery BEGIN -->
-    <section class="photogallery">
+    <div class="link-for-header" id="Photogallery"></div>
+    <section class="photogallery" id="Photogallery">
       <h2 class="section__title">Фотогалерея</h2>
       <div class="photogallery__container">
         <picture class="photogallery__photo">
@@ -398,15 +405,18 @@
       </div>
     </section>
     <!-- photogallery END -->
-
-    <footer class="footer">
+    <div class="link-for-header" id="Footer"></div>
+    <footer class="footer" id="Footer">
       <h2 class="section__title">Контакти</h2>
       <div class="footer__container">
         <p class="footer__signature">Залиште заявку і ми зв’яжемося з Вами</p>
         <div class="footer__contacts">
           <div class="footer__contact">
             <img src="./img/icon/phone_dark.svg" alt="icon phone" width="20px" height="20px" class="footer__icon">
-            <p class="footer__phone">(095) 558-24-24 (068) 128-24-24</p>
+            <div class="footer__phone">
+              <a href="tel:0951248443">(095) 124-84-43</a>
+              <a href="tel:+0666141726">(066) 614-17-26</a>
+            </div>
           </div>
           <div class="footer__contact">
             <img src="./img/icon/location.svg" alt="icon location" width="20px" height="20px" class="footer__icon">
@@ -442,8 +452,6 @@
         </div>
       </div>
     </footer>
-
-
 
   </div>
 </body>

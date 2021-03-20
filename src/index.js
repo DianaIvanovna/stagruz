@@ -7,7 +7,14 @@ import Header from './js/Header';
 import Animation from './js/Animation';
 
 (function () {
-  const header = new Header();
+  const links = document.querySelectorAll('.header__link');
+  const services = document.querySelector('.services');
+  const autopark = document.querySelector('.autopark');
+  const movers = document.querySelector('.movers');
+  const photogallery = document.querySelector('.photogallery');
+  const footer = document.querySelector('footer');
+
+  const header = new Header(links,[services, autopark, movers, photogallery, footer]);
 })();
 
 // swiper

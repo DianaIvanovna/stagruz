@@ -1,13 +1,22 @@
 .footer__phone {
-  @include fontValueMontserrat(normal, bold, 18px, 22px);
-
-  margin: 0;
   width: 150px;
-  color: $text-color-description;
 
-  @media screen and (max-width: 500px) {
-    @include fontValueMontserrat(normal, bold, 14px, 17px);
+  a {
+    @include fontValueMontserrat(normal, bold, 18px, 22px);
 
+    text-decoration: none;
+    color: $text-color-description;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 550px) {
     width: 120px;
+
+    a {
+      @include fontValueMontserrat(normal, bold, 14px, 17px);
+    }
   }
 }

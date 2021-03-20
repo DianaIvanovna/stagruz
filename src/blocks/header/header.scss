@@ -7,7 +7,9 @@
 @import "./_open-mobile/header_open-mobile.scss";
 
 .header {
-  position: relative;
+  // position: relative;
+  position: fixed;
+  top: 0;
   z-index: 100;
   display: flex;
   align-items: flex-end;
@@ -22,15 +24,15 @@
   }
 
   @media screen and (min-width: 1440px) {
-    padding: 0 120px;
+    padding: 0 120px 5px;
   }
 
   @media screen and (max-width: 1440px) {
-    padding: 0 80px;
+    padding: 0 80px 5px;
   }
 
   @media screen and (max-width: 1140px) {
-    padding: 0 40px;
+    padding: 0 40px 5px;
   }
 
   @media screen and (max-width: 1040px) {
@@ -45,5 +47,19 @@
 
   @media screen and (max-width: 500px) {
     padding: 0 20px;
+  }
+}
+
+.header_scrolling {
+  background-color: $attention-color;
+
+  .header__link {
+    a {
+      color: $text-color-white;
+    }
+  }
+
+  .header__link_active {
+    border-bottom: 2px solid $text-color-white;
   }
 }

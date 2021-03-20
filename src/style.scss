@@ -17,8 +17,22 @@
 
 .content {
   overflow: hidden;
+  padding-top: 90px;
   width: 100%;
   height: 100%;
+
+  @media screen and (max-width: 1040px) {
+    padding-top: 70px;
+  }
+}
+
+.link-for-header {
+  position: relative;
+  top: -90px;
+
+  @media screen and (max-width: 1040px) {
+    top: -70px;
+  }
 }
 
 button:focus {

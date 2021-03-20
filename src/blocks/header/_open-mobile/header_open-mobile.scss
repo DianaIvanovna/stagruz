@@ -2,6 +2,17 @@
   background: $attention-color;
 
   .header__menu {
+    z-index: 100;
     display: flex;
+  }
+
+  .header__link {
+    a {
+      color: $text-color-white;
+    }
+  }
+
+  .header__link_active {
+    border-bottom: 2px solid $text-color-white;
   }
 }
