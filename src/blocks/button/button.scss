@@ -16,3 +16,14 @@
   color: $title-color;
   background: none;
 }
+
+.button_link {
+  @include fontValue(normal, bold, 18px, 50px);
+
+  display: inline-block;
+  border: none;
+  width: 220px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+}
