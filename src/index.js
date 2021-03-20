@@ -5,7 +5,9 @@ import Swiper from 'swiper'; // import Swiper JS
 import SwiperCore, { Navigation, Pagination, Scrollbar } from 'swiper/core'; // Import Swiper and modules
 import Header from './js/Header';
 import Animation from './js/Animation';
+import Form from './js/Form';
 
+// functions header
 (function () {
   const links = document.querySelectorAll('.header__link');
   const services = document.querySelector('.services');
@@ -117,6 +119,7 @@ import Animation from './js/Animation';
 
 })();
 
+// animation
 (function () {
   // анимация не работает с медиа запросом, пришлось делать так..
   const windowWidth = window.innerWidth;
@@ -139,4 +142,10 @@ import Animation from './js/Animation';
   ];
 
   const animation = new Animation(animationObject);
+})();
+
+// form
+(function () {
+  const formContainer = document.querySelector('.footer__container');
+  const form = new Form(formContainer);
 })();

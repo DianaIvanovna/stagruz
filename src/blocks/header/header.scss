@@ -51,6 +51,7 @@
 }
 
 .header_scrolling {
+  padding-bottom: 10px;
   background-color: $attention-color;
 
   .header__link {
@@ -61,5 +62,9 @@
 
   .header__link_active {
     border-bottom: 2px solid $text-color-white;
+  }
+
+  .header__callme {
+    margin-top: 15px;
   }
 }
