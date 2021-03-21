@@ -11,12 +11,6 @@
   background: linear-gradient(180deg, $attention-color 0%, #ff833a 100%);
 }
 
-.button__second {
-  border: 1px solid $attention-color;
-  color: $title-color;
-  background: none;
-}
-
 .button_link {
   @include fontValue(normal, bold, 18px, 50px);
 
@@ -26,4 +20,10 @@
   height: 50px;
   text-align: center;
   text-decoration: none;
+}
+
+.button_link.button__second {
+  border: 1px solid $attention-color;
+  color: $title-color;
+  background: none;
 }

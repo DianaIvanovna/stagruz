@@ -42,3 +42,22 @@
     height: 200px;
   }
 }
+
+.packaging-materials__item_anim {
+  .packaging-materials__name {
+    opacity: 1;
+    transition: all 2s ease 0s;
+
+    &::before {
+      opacity: 1;
+      transform: scale(1);
+      transition: all 2s ease 0s;
+    }
+
+    &::after {
+      opacity: 1;
+      transform: scale(1);
+      transition: all 2s ease 0s;
+    }
+  }
+}

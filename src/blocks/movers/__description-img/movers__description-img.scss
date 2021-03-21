@@ -1,0 +1,12 @@
+.movers__description-img {
+  width: 100%;
+
+  img {
+    width: 95%;
+    object-fit: contain;
+  }
+
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
+}

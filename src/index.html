@@ -18,42 +18,44 @@
     <!-- HEADER START -->
     <div class="background-mobile"></div>
     <header class="header">
-      <img src="./img/logo.png" class="header__logo" width="124px" height="58px" alt="logo">
-      <nav class="header__menu">
-        <ul class="header__links">
-          <li class="header__link">
-            <a href="#Services" class="">НАШІ ПОСЛУГИ</a>
-          </li>
-          <li class="header__link">
-            <a href="#Autopark" class="">АВТОПАРК</a>
-          </li>
-          <li class="header__link">
-            <a href="#Movers" class="">ВАНТАЖНИКИ</a>
-          </li>
-          <li class="header__link">
-            <a href="#Photogallery" class="">ФОТОГАЛЕРЕЯ</a>
-          </li>
-          <li class="header__link ">
-            <a href="#Footer" class="">КОНТАКТИ</a>
-          </li>
-        </ul>
-        <div>
-          <a href="https://www.instagram.com/stagruz/?igshid=rrzqx7afbdc" class="header__icon">
-            <img src="./img/icon/instagram.svg" class="" width="22px" height="22px" alt="instagram">
-          </a>
-          <a href="https://viber.click/70955582424" class="header__icon">
-            <img src="./img/icon/viber.svg" class="" width="22px" height="22px" alt="viber">
-          </a>
+      <div class="header__content">
+        <img src="./img/logo.png" class="header__logo" width="124px" height="58px" alt="logo">
+        <nav class="header__menu">
+          <ul class="header__links">
+            <li class="header__link">
+              <a href="#Services" class="">НАШІ ПОСЛУГИ</a>
+            </li>
+            <li class="header__link">
+              <a href="#Autopark" class="">АВТОПАРК</a>
+            </li>
+            <li class="header__link">
+              <a href="#Movers" class="">ВАНТАЖНИКИ</a>
+            </li>
+            <li class="header__link">
+              <a href="#Photogallery" class="">ФОТОГАЛЕРЕЯ</a>
+            </li>
+            <li class="header__link ">
+              <a href="#Footer" class="">КОНТАКТИ</a>
+            </li>
+          </ul>
+          <div>
+            <a href="https://www.instagram.com/stagruz/?igshid=rrzqx7afbdc" class="header__icon">
+              <img src="./img/icon/instagram.svg" class="" width="22px" height="22px" alt="instagram">
+            </a>
+            <a href="https://viber.click/70955582424" class="header__icon">
+              <img src="./img/icon/viber.svg" class="" width="22px" height="22px" alt="viber">
+            </a>
+          </div>
+        </nav>
+        <div class="header__callme">
+          <img src="./img/icon/phone.svg" class="header__icon" width="20px" height="20px" alt="icon phone">
+          <div class="header__phone">
+            <a href="tel:0951248443">(095) 124-84-43</a>
+            <a href="tel:+0666141726">(066) 614-17-26</a>
+          </div>
         </div>
-      </nav>
-      <div class="header__callme">
-        <img src="./img/icon/phone.svg" class="header__icon" width="20px" height="20px" alt="icon phone">
-        <div class="header__phone">
-          <a href="tel:0951248443">(095) 124-84-43</a>
-          <a href="tel:+0666141726">(066) 614-17-26</a>
-        </div>
+        <img src="./img/icon/mobile-menu.svg" width="30px" height="30px" alt="icon munu" class="header__modile-menu">
       </div>
-      <img src="./img/icon/mobile-menu.svg" width="30px" height="30px" alt="icon munu" class="header__modile-menu">
     </header>
     <!-- HEADER END -->
 
@@ -142,8 +144,8 @@
       <!-- свойства машины start -->
 
       <div class="preview__buttons">
-        <button class="button button__to-form">Залишити заявку</button>
-        <button class="button button__second">Дізнатися більше</button>
+        <a href="#Footer" class="button_link button__to-form">Залишити заявку</a>
+        <a href="#Services" class="button_link button__second">Дізнатися більше</a>
       </div>
 
     </section>
@@ -221,7 +223,7 @@
                       ширина <span>  1.7 </span> м
                     </li>
                   </ul>
-                  <button class="button button__to-form button__to-form_autopark">Залишити заявку</button>
+                  <a href="#Footer" class="button_link button__to-form button__to-form_autopark">Залишити заявку</a>
                 </div>
               </div>
             </div>
@@ -245,7 +247,7 @@
                       ширина <span>  1.7 </span> м
                     </li>
                   </ul>
-                  <button class="button button__to-form button__to-form_autopark">Залишити заявку</button>
+                  <a href="#Footer" class="button_link button__to-form button__to-form_autopark">Залишити заявку</a>
                 </div>
               </div>
             </div>
@@ -269,7 +271,7 @@
                       ширина <span>  2,2 </span> м
                     </li>
                   </ul>
-                  <button class="button button__to-form button__to-form_autopark">Залишити заявку</button>
+                  <a href="#Footer" class="button_link button__to-form button__to-form_autopark">Залишити заявку</a>
                 </div>
               </div>
             </div>
@@ -296,6 +298,12 @@
             Підберемо Авто саме під ваш переїзд.
             З нами ви можете вирішити всі питання в будь-який час. Ми працюємо цілодобово та без вихідних з турботою про вас.
           </p>
+          <picture class="movers__description-img">
+            <source media="(min-width: 800px)" srcset="./images/photo-1b930dd874aa745a1f4c2b930dd874aa745a1f4c2.webp" type="image/webp">
+            <source media="(min-width: 800px)" srcset="./images/photo-1b930dd874aa745a1f4c2b930dd874aa745a1f4c2.png" type="image/png">
+            <source srcset="./images/photo-1-small1ad6387f34448da912fc.webp" type="image/webp">
+            <img src="./images/photo-1-small1ad6387f34448da912fc.png" alt="photo stagruz">
+          </picture>
         </div>
         <picture class="movers__img">
           <source media="(min-width: 1100px)" srcset="./images/mover29ec253ef3243f17f67e.webp" type="image/webp">

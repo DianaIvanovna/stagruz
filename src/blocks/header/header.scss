@@ -6,11 +6,7 @@
 @import "./__logo/header__logo.scss";
 @import "./_open-mobile/header_open-mobile.scss";
 
-.header {
-  // position: relative;
-  position: fixed;
-  top: 0;
-  z-index: 100;
+.header__content {
   display: flex;
   align-items: flex-end;
   margin: 0 auto;
@@ -48,6 +44,14 @@
   @media screen and (max-width: 500px) {
     padding: 0 20px;
   }
+}
+
+.header {
+  // position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
 }
 
 .header_scrolling {

@@ -1,13 +1,23 @@
 @import "./_textarea/footer__input_textarea.scss";
 
 .footer__input {
+  @include fontValue(normal, 300, 14px, 16px);
+
   margin-bottom: 16px;
   border: 1px solid $attention-border;
   padding: 12px 24px;
   width: 100%;
   max-width: calc((100% / 2) - 8px);
   box-sizing: border-box;
+  color: $text-color-second;
   background: $text-color-white;
+
+  &::placeholder {
+    @include fontValue(normal, 300, 14px, 16px);
+
+    color: #004910;
+    opacity: 0.45;
+  }
 
   &:first-of-type {
     margin-right: 12px;

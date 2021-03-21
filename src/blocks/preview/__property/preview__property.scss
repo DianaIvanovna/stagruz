@@ -11,7 +11,7 @@
     right: 0;
     top: 0;
     display: block;
-    border: 2px solid $attention-border;
+    border-left: 2px solid $attention-border;
     width: 0;
     height: 90px;
   }
@@ -22,7 +22,7 @@
     left: 0;
     top: 0;
     display: block;
-    border: 2px solid $attention-border;
+    border-left: 2px solid $attention-border;
     width: 0;
     height: 90px;
   }
@@ -45,7 +45,7 @@
         right: 0;
         top: 0;
         display: block;
-        border: 2px solid $attention-border;
+        border-left: 2px solid $attention-border;
         width: 0;
         height: 90px;
       }

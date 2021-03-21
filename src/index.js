@@ -57,7 +57,7 @@ import Form from './js/Form';
   });
 
   const cars = [{
-    name: "Мини",
+    name: "Мiнi",
     length: " 3.3 ",
     height: " 1,8 ",
     width: " 1,7 ",
@@ -139,6 +139,10 @@ import Form from './js/Form';
       item: ".footer__down-container",
       classActive: classActiveCar,
     },
+    {
+      item: ".packaging-materials__item",
+      classActive: "packaging-materials__item_anim"
+    }
   ];
 
   const animation = new Animation(animationObject);
