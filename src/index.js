@@ -153,3 +153,21 @@ import Form from './js/Form';
   const formContainer = document.querySelector('.footer__container');
   const form = new Form(formContainer);
 })();
+
+(function () { // для загрузки карты позже
+  document.addEventListener("DOMContentLoaded", function() {
+    const imageObserver = new IntersectionObserver((entries, imgObserver) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            const item = entry.target;
+            item.innerHTML = `<iframe src="https://www.google.com/maps/d/embed?mid=1pq0l6-IMWArbcPmm-qQTbuy1M3TPFoG6" width="579" height="240"></iframe>`;
+            imgObserver.unobserve(item);
+        }
+      })
+    });
+    const mapsContainer = document.querySelector('.footer');
+    const maps = document.querySelector('.footer__card');
+    imageObserver.observe(maps);
+  })
+})();
+
