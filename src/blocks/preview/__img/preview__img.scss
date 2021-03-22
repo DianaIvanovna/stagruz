@@ -1,10 +1,12 @@
 .preview__img {
   width: 95%;
+  height: 100%;
   object-fit: contain;
   transform: rotate(4deg);
 
   @media screen and (max-width: 600px) {
     width: auto;
     max-width: 95%;
+    max-height: 85vw;
   }
 }

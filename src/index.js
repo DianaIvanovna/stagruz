@@ -160,7 +160,7 @@ import Form from './js/Form';
       entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
             const item = entry.target;
-            item.innerHTML = `<iframe src="https://www.google.com/maps/d/embed?mid=1pq0l6-IMWArbcPmm-qQTbuy1M3TPFoG6" width="579" height="240"></iframe>`;
+            item.innerHTML = `<iframe class="footer__maps" src="https://www.google.com/maps/d/embed?mid=1pq0l6-IMWArbcPmm-qQTbuy1M3TPFoG6" width="579" height="240"></iframe>`;
             imgObserver.unobserve(item);
         }
       })
