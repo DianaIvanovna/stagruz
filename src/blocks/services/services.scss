@@ -3,3 +3,30 @@
 @import "./__description/services__description.scss";
 @import "./__item/services__item.scss";
 @import "./__signature/services__signature.scss";
+
+.services {
+  position: relative;
+}
+
+.services__elipse {
+  position: absolute;
+  left: -50%;
+  top: 0;
+  border-radius: 100%;
+  width: 1211px;
+  height: 1211px;
+  background: $attention-color;
+  opacity: 0.2;
+
+  @media screen and (max-width: 1040px) {
+    left: -65%;
+    top: 30%;
+  }
+
+  @media screen and (max-width: 600px) {
+    left: -80%;
+    top: 60%;
+    width: 500px;
+    height: 500px;
+  }
+}
