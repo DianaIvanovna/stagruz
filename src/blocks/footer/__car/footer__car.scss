@@ -8,6 +8,10 @@
     bottom: 35px;
   }
 
+  img {
+    object-fit: contain;
+  }
+
   @media screen and (max-width: 600px) {
     img {
       bottom: 40px;
@@ -24,6 +28,10 @@
 
   @media screen and (max-width: 900px) {
     bottom: 35px;
+  }
+
+  img {
+    object-fit: contain;
   }
 
   @media screen and (max-width: 600px) {

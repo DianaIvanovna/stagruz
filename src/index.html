@@ -19,7 +19,10 @@
     <div class="background-mobile"></div>
     <header class="header">
       <div class="header__content">
-        <img src="./img/logo.png" class="header__logo" width="124px" height="58px" alt="logo">
+        <picture class="header__logo">
+          <source srcset="<%= require('./images/logo.png?{sizes:[124], format: \'webp\'}') %>" type="image/webp">
+          <img src="<%= require('./images/logo.png') %>"  width="124px" height="58px" alt="logo">
+        </picture>
         <nav class="header__menu">
           <ul class="header__links">
             <li class="header__link">
@@ -40,21 +43,21 @@
           </ul>
           <div>
             <a href="https://www.instagram.com/stagruz/?igshid=rrzqx7afbdc" class="header__icon">
-              <img src="./img/icon/instagram.svg" class="" width="22px" height="22px" alt="instagram">
+              <img src="<%= require('./images/icon/instagram.svg') %>" class="" width="22px" height="22px" alt="instagram">
             </a>
             <a href="https://viber.click/70955582424" class="header__icon">
-              <img src="./img/icon/viber.svg" class="" width="22px" height="22px" alt="viber">
+              <img src="<%= require('./images/icon/viber.svg') %>" class="" width="22px" height="22px" alt="viber">
             </a>
           </div>
         </nav>
         <div class="header__callme">
-          <img src="./img/icon/phone.svg" class="header__icon" width="20px" height="20px" alt="icon phone">
+          <img src="<%= require('./images/icon/phone.svg') %>" class="header__icon" width="20px" height="20px" alt="icon phone">
           <div class="header__phone">
             <a href="tel:0951248443">(095) 558-24-24</a>
             <a href="tel:+0666141726">(068) 128-24-24</a>
           </div>
         </div>
-        <img src="./img/icon/mobile-menu.svg" width="30px" height="30px" alt="icon munu" class="header__modile-menu">
+        <img src="<%= require('./images/icon/mobile-menu.svg') %>" width="30px" height="30px" alt="icon munu" class="header__modile-menu">
       </div>
     </header>
     <!-- HEADER END -->
@@ -80,13 +83,13 @@
         <!-- свойства машины start -->
         <div class="preview__car-characteristics">
           <div class="preview__property">
-            <img src="./img/icon/escalator.svg" alt="icon escalator" width="52px" height="52px" class="preview__icon">
+            <img src="<%= require('./images/icon/escalator.svg') %>" alt="icon escalator" width="52px" height="52px" class="preview__icon">
 
             <p class="preview__property-text">до<span class="preview__weight preview__weight_loadCapacity"> 5 </span>тон</p>
             <p class="preview__property-name">Вантажопідйомність</p>
           </div>
           <div class="preview__property">
-            <img src="./img/icon/truck.svg" alt="icon truck" width="52px" height="52px" class="preview__icon">
+            <img src="<%= require('./images/icon/truck.svg') %>" alt="icon truck" width="52px" height="52px" class="preview__icon">
             <p class="preview__property-text">до<span class="preview__weight preview__weight_carVolume"> 40 </span>куб</p>
             <p class="preview__property-name">Об `єм</p>
           </div>
@@ -97,17 +100,61 @@
       <!-- слайдер start -->
       <div class="swiper-container swiper-container_preview">
         <div class="swiper-wrapper swiper-wrapper_preview">
-          <div class="swiper-slide swiper-slide_preview ">
-            <img class="preview__img" src="./img/cars/car-1-big.png" width="300px" height="250px" alt="photo car">
-          </div>
 
-          <div class="swiper-slide swiper-slide_preview ">
-            <img class="preview__img" src="./img/cars/car-4-big.png" width="300px" height="250px" alt="photo car">
-          </div>
+          <picture class="swiper-slide swiper-slide_preview">
+            <source
+              media="(min-width: 600px)"
+              srcset="<%= require('./images/cars/car-1.png?{sizes:[570], format: \'webp\'}') %>"
+              type="image/webp"
+            >
+            <source
+              media="(max-width: 600px)"
+              srcset="<%= require('./images/cars/car-1.png?{sizes:[400], format: \'webp\'}') %>"
+              type="image/webp"
+            >
+            <img
+                width="auto" height="auto"
+                class="preview__img"
+                src="<%= require('./images/cars/car-1.png?{sizes:[570]}') %>"
+                alt="photo car">
+          </picture>
 
-          <div class="swiper-slide swiper-slide_preview  ">
-            <img class="preview__img" src="./img/cars/car-5-big.png" width="300px" height="250px" alt="photo car">
-          </div>
+          <picture class="swiper-slide swiper-slide_preview">
+            <source
+              media="(min-width: 600px)"
+              srcset="<%= require('./images/cars/car-2.png?{sizes:[570], format: \'webp\'}') %>"
+              type="image/webp"
+            >
+            <source
+              media="(max-width: 600px)"
+              srcset="<%= require('./images/cars/car-2.png?{sizes:[400], format: \'webp\'}') %>"
+              type="image/webp"
+            >
+            <img
+                width="auto" height="auto"
+                class="preview__img"
+                src="<%= require('./images/cars/car-2.png?{sizes:[570]}') %>"
+                alt="photo car">
+          </picture>
+
+          <picture class="swiper-slide swiper-slide_preview">
+            <source
+              media="(min-width: 600px)"
+              srcset="<%= require('./images/cars/car-3.png?{sizes:[570], format: \'webp\'}') %>"
+              type="image/webp"
+            >
+            <source
+              media="(max-width: 600px)"
+              srcset="<%= require('./images/cars/car-3.png?{sizes:[400], format: \'webp\'}') %>"
+              type="image/webp"
+            >
+            <img
+                width="auto" height="auto"
+                class="preview__img"
+                src="<%= require('./images/cars/car-3.png?{sizes:[570]}') %>"
+                alt="photo car">
+          </picture>
+
         </div>
 
         <div class="preview__car-description">
@@ -130,13 +177,13 @@
       <!-- свойства машины start -->
       <div class="preview__car-characteristics">
         <div class="preview__property">
-          <img src="./img/icon/escalator.svg" alt="icon escalator" width="52px" height="52px" class="preview__icon">
+          <img src="<%= require('./images/icon/escalator.svg') %>" alt="icon escalator" width="52px" height="52px" class="preview__icon">
 
           <p class="preview__property-text">до<span class="preview__weight preview__weight_loadCapacity"> 5 </span>тон</p>
           <p class="preview__property-name">Вантажопідйомність</p>
         </div>
         <div class="preview__property">
-          <img src="./img/icon/truck.svg" alt="icon truck" width="52px" height="52px" class="preview__icon">
+          <img src="<%= require('./images/icon/truck.svg') %>" alt="icon truck" width="52px" height="52px" class="preview__icon">
           <p class="preview__property-text">до<span class="preview__weight preview__weight_carVolume"> 40 </span>куб</p>
           <p class="preview__property-name">Об `єм</p>
         </div>
@@ -159,35 +206,35 @@
       <div class="services__content">
         <div class="services__container">
           <div class="services__item">
-            <img src="./img/services/service_1.svg" alt="Квартирні переїзди" width="100px" height="100px">
+            <img src="<%= require('./images/services/service_1.svg')%>" alt="Квартирні переїзди" width="100px" height="100px">
             <p class="services__description">Квартирні <br> переїзди</p>
           </div>
           <div class="services__item">
-            <img src="./img/services/service_2.svg" alt="Офісні переїзди" width="100px" height="100px">
+            <img src="<%= require('./images/services/service_2.svg')%>" alt="Офісні переїзди" width="100px" height="100px">
             <p class="services__description">Офісні <br> переїзди</p>
           </div>
           <div class="services__item">
-            <img src="./img/services/service_3.svg" alt="Послуги вантажників" width="100px" height="100px">
+            <img src="<%= require('./images/services/service_3.svg')%>" alt="Послуги вантажників" width="100px" height="100px">
             <p class="services__description">Послуги <br> вантажників</p>
           </div>
           <div class="services__item">
-            <img src="./img/services/service_4.svg" alt="Переїзд в інше місто" width="100px" height="100px">
+            <img src="<%= require('./images/services/service_4.svg')%>" alt="Переїзд в інше місто" width="100px" height="100px">
             <p class="services__description">Переїзд <br> в інше місто</p>
           </div>
           <div class="services__item">
-            <img src="./img/services/service_5.svg" alt="Вивіз та утилізація сміття" width="100px" height="100px">
+            <img src="<%= require('./images/services/service_5.svg')%>" alt="Вивіз та утилізація сміття" width="100px" height="100px">
             <p class="services__description">Вивіз та утилізація <br>сміття</p>
           </div>
           <div class="services__item">
-            <img src="./img/services/service_6.svg" alt="Доставка меблів" width="100px" height="100px">
+            <img src="<%= require('./images/services/service_6.svg')%>" alt="Доставка меблів" width="100px" height="100px">
             <p class="services__description">Доставка меблів <br>із магазинів</p>
           </div>
           <div class="services__item">
-            <img src="./img/services/service_7.svg" alt="Перевозка піаніно, сейфів, роялів" width="100px" height="100px">
+            <img src="<%= require('./images/services/service_7.svg')%>" alt="Перевозка піаніно, сейфів, роялів" width="100px" height="100px">
             <p class="services__description">Перевозка піаніно, <br>сейфів, роялів</p>
           </div>
           <div class="services__item">
-            <img src="./img/services/service_8.svg" alt="Пакування, сборка, розборка" width="100px" height="100px">
+            <img src="<%= require('./images/services/service_8.svg')%>" alt="Пакування, сборка, розборка" width="100px" height="100px">
             <p class="services__description">Пакування, <br>Розбирання та збирання</p>
           </div>
           <p class="services__signature">STAGRUZ</p>
@@ -207,20 +254,36 @@
 
             <div class="swiper-slide swiper-slide_autopark ">
               <div class="autopark__card autopark__card_1">
-                <img class="autopark__img" width="360px" height="240px" src="./img/cars/car-1.png" alt="photo car">
+                <picture class="autopark__img">
+                  <source
+                    media="(min-width: 651px)"
+                    srcset="<%= require('./images/cars/car-1.png?{sizes:[360], format: \'webp\'}') %>"
+                    type="image/webp"
+                  >
+                  <source
+                    media="(max-width: 651px)"
+                    srcset="<%= require('./images/cars/car-1.png?{sizes:[160], format: \'webp\'}') %>"
+                    type="image/webp"
+                  >
+                  <img
+                      width="360px" height="240px"
+                      src="<%= require('./images/cars/car-1.png?{sizes:[360,160]}') %>"
+                      alt="photo car">
+                </picture>
+
                 <div class="autopark__card-description">
                   <p class="autopark__name">Мини</p>
                   <ul class="autopark__property">
                     <li>
-                      <img src="./img/icon/autopark-icon-1.svg" alt="icon length" class="autopark__icon" width="20px" height="20px">
+                      <img src="<%= require('./images/icon/autopark-icon-1.svg') %>" alt="icon length" class="autopark__icon" width="20px" height="20px">
                       довжина <span> 3,3 </span> м
                     </li>
                     <li>
-                      <img src="./img/icon/autopark-icon-2.svg" alt="icon height" class="autopark__icon" width="20px" height="20px">
+                      <img src="<%= require('./images/icon/autopark-icon-2.svg') %>" alt="icon height" class="autopark__icon" width="20px" height="20px">
                       вистота <span> 1,8 </span> м
                     </li>
                     <li>
-                      <img src="./img/icon/autopark-icon-3.svg" alt="icon width" class="autopark__icon" width="20px" height="20px">
+                      <img src="<%= require('./images/icon/autopark-icon-3.svg') %>" alt="icon width" class="autopark__icon" width="20px" height="20px">
                       ширина <span> 1.7 </span> м
                     </li>
                   </ul>
@@ -231,20 +294,35 @@
 
             <div class="swiper-slide swiper-slide_autopark ">
               <div class="autopark__card autopark__card_2">
-                <img class="autopark__img" width="360px" height="240px" src="./img/cars/car-4.png" alt="photo car">
+                <picture class="autopark__img">
+                  <source
+                    media="(min-width: 651px)"
+                    srcset="<%= require('./images/cars/car-2.png?{sizes:[360], format: \'webp\'}') %>"
+                    type="image/webp"
+                  >
+                  <source
+                    media="(max-width: 651px)"
+                    srcset="<%= require('./images/cars/car-2.png?{sizes:[160], format: \'webp\'}') %>"
+                    type="image/webp"
+                  >
+                  <img
+                      width="360px" height="240px"
+                      src="<%= require('./images/cars/car-2.png?{sizes:[360,160]}') %>"
+                      alt="photo car">
+                </picture>
                 <div class="autopark__card-description">
                   <p class="autopark__name">Стандарт</p>
                   <ul class="autopark__property">
                     <li>
-                      <img src="./img/icon/autopark-icon-1.svg" alt="icon length" class="autopark__icon" width="20px" height="20px">
+                      <img src="<%= require('./images/icon/autopark-icon-1.svg') %>" alt="icon length" class="autopark__icon" width="20px" height="20px">
                       довжина <span> 4,3 </span> м
                     </li>
                     <li>
-                      <img src="./img/icon/autopark-icon-2.svg" alt="icon height" class="autopark__icon" width="20px" height="20px">
+                      <img src="<%= require('./images/icon/autopark-icon-2.svg') %>" alt="icon height" class="autopark__icon" width="20px" height="20px">
                       вистота <span> 1,8 </span> м
                     </li>
                     <li>
-                      <img src="./img/icon/autopark-icon-3.svg" alt="icon width" class="autopark__icon" width="20px" height="20px">
+                      <img src="<%= require('./images/icon/autopark-icon-3.svg') %>" alt="icon width" class="autopark__icon" width="20px" height="20px">
                       ширина <span>  1.7 </span> м
                     </li>
                   </ul>
@@ -255,20 +333,37 @@
 
             <div class="swiper-slide swiper-slide_autopark ">
               <div class="autopark__card autopark__card_3">
-                <img class="autopark__img" width="360px" height="240px" src="./img/cars/car-5.png" alt="photo car">
+
+                <picture class="autopark__img">
+                  <source
+                    media="(min-width: 651px)"
+                    srcset="<%= require('./images/cars/car-3.png?{sizes:[360], format: \'webp\'}') %>"
+                    type="image/webp"
+                  >
+                  <source
+                    media="(max-width: 651px)"
+                    srcset="<%= require('./images/cars/car-3.png?{sizes:[160], format: \'webp\'}') %>"
+                    type="image/webp"
+                  >
+                  <img
+                      width="360px" height="240px"
+                      src="<%= require('./images/cars/car-3.png?{sizes:[360,160]}') %>"
+                      alt="photo car">
+                </picture>
+
                 <div class="autopark__card-description">
                   <p class="autopark__name">Максі</p>
                   <ul class="autopark__property">
                     <li>
-                      <img src="./img/icon/autopark-icon-1.svg" alt="icon length" class="autopark__icon" width="20px" height="20px">
+                      <img src="<%= require('./images/icon/autopark-icon-1.svg') %>" alt="icon length" class="autopark__icon" width="20px" height="20px">
                       довжина <span> 4,2 </span> м
                     </li>
                     <li>
-                      <img src="./img/icon/autopark-icon-2.svg" alt="icon height" class="autopark__icon" width="20px" height="20px">
+                      <img src="<%= require('./images/icon/autopark-icon-2.svg') %>" alt="icon height" class="autopark__icon" width="20px" height="20px">
                       вистота <span> 2,2 </span> м
                     </li>
                     <li>
-                      <img src="./img/icon/autopark-icon-3.svg" alt="icon width" class="autopark__icon" width="20px" height="20px">
+                      <img src="<%= require('./images/icon/autopark-icon-3.svg') %>" alt="icon width" class="autopark__icon" width="20px" height="20px">
                       ширина <span>  2,2 </span> м
                     </li>
                   </ul>
@@ -299,21 +394,32 @@
             Підберемо Авто саме під ваш переїзд.
             З нами ви можете вирішити всі питання в будь-який час. Ми працюємо цілодобово та без вихідних з турботою про вас.
           </p>
-          <picture class="movers__description-img">
-            <source media="(min-width: 800px)" srcset="./img/photogallery/photo-1.webp" type="image/webp">
-            <source media="(min-width: 800px)" srcset="./img/photogallery/photo-1.png" type="image/png">
-            <source srcset="./img/photogallery/photo-1-small.webp" type="image/webp">
-            <img src="./img/photogallery/photo-1-small.png" width="600px" height="300px" alt="photo stagruz">
+          <picture class="movers__description-img lazy-image">
+            <source
+              media="(min-width: 800px)"
+              data-srcset="<%= require('./images/photogallery/photo-1.png?{sizes:[608], format: \'webp\'}') %>"
+              type="image/webp"
+            >
+            <img
+                width="600px" height="300px"
+                src="<%= require('./images/photogallery/photo-1.png?{sizes:[608]}') %>"
+                data-srcset="<%= require('./images/photogallery/photo-1.png?{sizes:[608]}') %>"
+                srcset="<%= require('./images/photogallery/photo-1.png?{sizes:[608], placeholder: true}').placeholder %>"
+                alt="photo stagruz">
           </picture>
         </div>
-        <picture class="movers__img">
-          <source media="(min-width: 1100px)" srcset="./img/mover.webp" type="image/webp">
-          <source media="(min-width: 1100px)" srcset="./img/mover.png" type="image/png">
-          <source media="(min-width: 800px)" srcset="./img/mover-small.webp" type="image/webp">
-          <source media="(min-width: 800px)" srcset="./img/mover-small.png" type="image/png">
-          <source media="(min-width: 500px)" srcset="./img/mover.webp" type="image/webp">
-          <source media="(min-width: 500px)" srcset="./img/mover.png" type="image/png">
-          <img src="./img/mover-small.png" width="640px" height="680px" alt="Вантажники">
+
+        <picture class="movers__img lazy-image">
+          <source
+            data-srcset="<%= require('./images/photogallery/mover.png?{sizes:[640, 500, 400,300], format: \'webp\'}') %>"
+            type="image/webp"
+          >
+          <img
+              width="640px" height="680px"
+              src="<%= require('./images/photogallery/mover.png?{sizes:[640, 500, 400,300]}') %>"
+              data-srcset="<%= require('./images/photogallery/mover.png?{sizes:[640, 500, 400,300]}') %>"
+              srcset="<%= require('./images/photogallery/mover.png?{sizes:[640, 500, 400,300], placeholder: true}').placeholder %>"
+              alt="photo stagruz">
         </picture>
       </div>
     </section>
@@ -324,27 +430,51 @@
       <h2 class="section__title">Пакувальні матеріали</h2>
       <div class="packaging-materials__container">
         <div class="packaging-materials__item">
-          <picture class="packaging-materials__img">
-            <source srcset="./img/packaging-materials/scotch.webp" type="image/webp">
-            <img width="380px" height="200px" src="./img/packaging-materials/scotch.png" alt="Скотч">
+          <picture class="packaging-materials__img lazy-image">
+            <source
+              data-srcset="<%= require('./images/packaging-materials/scotch.png?{sizes:[380, 250, 130,80], format: \'webp\'}') %>"
+              type="image/webp"
+            >
+            <img
+                width="380px" height="200px"
+                src="<%= require('./images/packaging-materials/scotch.png?{sizes:[380, 250, 130,80]}') %>"
+                data-srcset="<%= require('./images/packaging-materials/scotch.png?{sizes:[380, 250, 130,80]}') %>"
+                srcset="<%= require('./images/packaging-materials/scotch.png?{sizes:[380, 250, 130,80], placeholder: true}').placeholder %>"
+                alt="Скотч">
           </picture>
           <div>
             <p class="packaging-materials__name">Скотч</p>
           </div>
         </div>
         <div class="packaging-materials__item">
-          <picture class="packaging-materials__img">
-            <source srcset="./img/packaging-materials/cardboard.webp" type="image/webp">
-            <img width="380px" height="200px" src="./img/packaging-materials/cardboard.png" alt="Гофрокартон">
+          <picture class="packaging-materials__img lazy-image">
+            <source
+              data-srcset="<%= require('./images/packaging-materials/cardboard.png?{sizes:[380, 250, 130,80], format: \'webp\'}') %>"
+              type="image/webp"
+            >
+            <img
+                width="380px" height="200px"
+                src="<%= require('./images/packaging-materials/cardboard.png?{sizes:[380, 250, 130,80]}') %>"
+                data-srcset="<%= require('./images/packaging-materials/cardboard.png?{sizes:[380, 250, 130,80]}') %>"
+                srcset="<%= require('./images/packaging-materials/cardboard.png?{sizes:[380, 250, 130,80], placeholder: true}').placeholder %>"
+                alt="Гофрокартон">
           </picture>
           <div>
             <p class="packaging-materials__name">Гофрокартон</p>
           </div>
         </div>
         <div class="packaging-materials__item">
-          <picture class="packaging-materials__img">
-            <source srcset="./img/packaging-materials/stretch-film.webp" type="image/webp">
-            <img width="380px" height="200px" src="./img/packaging-materials/stretch-film.png" alt="Стрейч-плівка">
+          <picture class="packaging-materials__img lazy-image">
+            <source
+              data-srcset="<%= require('./images/packaging-materials/stretch-film.png?{sizes:[380, 250, 130,80], format: \'webp\'}') %>"
+              type="image/webp"
+            >
+            <img
+                width="380px" height="200px"
+                src="<%= require('./images/packaging-materials/stretch-film.png?{sizes:[380, 250, 130,80]}') %>"
+                data-srcset="<%= require('./images/packaging-materials/stretch-film.png?{sizes:[380, 250, 130,80]}') %>"
+                srcset="<%= require('./images/packaging-materials/stretch-film.png?{sizes:[380, 250, 130,80], placeholder: true}').placeholder %>"
+                alt="Стрейч-плівка">
           </picture>
           <div>
             <p class="packaging-materials__name">Стрейч-плівка</p>
@@ -362,48 +492,103 @@
       <div class="photogallery__elipse"></div>
       <h2 class="section__title">Фотогалерея</h2>
       <div class="photogallery__container">
-        <picture class="photogallery__photo">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-1.webp" type="image/webp">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-1.png" type="image/png">
-          <source srcset="./img/photogallery/photo-1-small.webp" type="image/webp">
-          <img width="400px" height="300px" src="./img/photogallery/photo-1-small.png" alt="photo stagruz">
-        </picture>
-        <picture class="photogallery__photo">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-2.webp" type="image/webp">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-2.png" type="image/png">
-          <source srcset="./img/photogallery/photo-2-small.webp" type="image/webp">
-          <img width="400px" height="300px" src="./img/photogallery/photo-2-small.png" alt="photo stagruz">
-        </picture>
-        <picture class="photogallery__photo">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-3.webp" type="image/webp">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-3.png" type="image/png">
-          <source srcset="./img/photogallery/photo-3-small.webp" type="image/webp">
-          <img width="400px" height="300px" src="./img/photogallery/photo-3-small.png" alt="photo stagruz">
-        </picture>
-        <picture class="photogallery__photo">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-4.webp" type="image/webp">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-4.png" type="image/png">
-          <source srcset="./img/photogallery/photo-4-small.webp" type="image/webp">
-          <img width="400px" height="300px" src="./img/photogallery/photo-4-small.png" alt="photo stagruz">
-        </picture>
-        <picture class="photogallery__photo">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-5.webp" type="image/webp">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-5.png" type="image/png">
-          <source srcset="./img/photogallery/photo-5-small.webp" type="image/webp">
-          <img width="400px" height="300px" src="./img/photogallery/photo-5-small.png" alt="photo stagruz">
+
+        <picture class="photogallery__photo lazy-image">
+          <source
+            data-srcset="<%= require('./images/photogallery/photo-1.png?{sizes:[800,640, 500, 300], format: \'webp\'}') %>"
+            type="image/webp"
+          >
+          <img
+            width="400px" height="300px"
+            src="<%= require('./images/photogallery/photo-1.png?{sizes:[800,640, 500, 300]}') %>"
+            data-srcset="<%= require('./images/photogallery/photo-1.png?{sizes:[800,640, 500, 300]}') %>"
+            srcset="<%= require('./images/photogallery/photo-1.png?{sizes:[800,640, 500, 300], placeholder: true}').placeholder %>"
+            alt="photo stagruz"
+          >
         </picture>
 
-        <picture class="photogallery__photo">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-3.webp" type="image/webp">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-3.png" type="image/png">
-          <source srcset="./img/photogallery/photo-3-small.webp" type="image/webp">
-          <img width="400px" height="300px" src="./img/photogallery/photo-3-small.png" alt="photo stagruz">
+        <picture class="photogallery__photo lazy-image">
+          <source
+            data-srcset="<%= require('./images/photogallery/photo-2.png?{sizes:[800,640, 500, 300], format: \'webp\'}') %>"
+            type="image/webp"
+          >
+          <img
+            width="400px" height="300px"
+            src="<%= require('./images/photogallery/photo-2.png?{sizes:[800,640, 500, 300]}') %>"
+            data-srcset="<%= require('./images/photogallery/photo-2.png?{sizes:[800,640, 500, 300]}') %>"
+            srcset="<%= require('./images/photogallery/photo-2.png?{sizes:[800,640, 500, 300], placeholder: true}').placeholder %>"
+            alt="photo stagruz"
+          >
         </picture>
-        <picture class="photogallery__photo">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-4.webp" type="image/webp">
-          <source media="(min-width: 800px)" srcset="./img/photogallery/photo-4.png" type="image/png">
-          <source srcset="./img/photogallery/photo-4-small.webp" type="image/webp">
-          <img width="400px" height="300px" src="./img/photogallery/photo-4-small.png" alt="photo stagruz">
+
+        <picture class="photogallery__photo lazy-image">
+          <source
+            data-srcset="<%= require('./images/photogallery/photo-3.png?{sizes:[400, 250, 150], format: \'webp\'}') %>"
+            type="image/webp"
+          >
+          <img
+            width="400px" height="300px"
+            src="<%= require('./images/photogallery/photo-3.png?{sizes:[400, 250, 150]}') %>"
+            data-srcset="<%= require('./images/photogallery/photo-3.png?{sizes:[400, 250, 150]}') %>"
+            srcset="<%= require('./images/photogallery/photo-3.png?{sizes:[400, 250, 150], placeholder: true}').placeholder %>"
+            alt="photo stagruz"
+          >
+        </picture>
+
+        <picture class="photogallery__photo lazy-image">
+          <source
+            data-srcset="<%= require('./images/photogallery/photo-4.png?{sizes:[400, 250, 150], format: \'webp\'}') %>"
+            type="image/webp"
+          >
+          <img
+            width="400px" height="300px"
+            src="<%= require('./images/photogallery/photo-4.png?{sizes:[400, 250, 150]}') %>"
+            data-srcset="<%= require('./images/photogallery/photo-4.png?{sizes:[400, 250, 150]}') %>"
+            srcset="<%= require('./images/photogallery/photo-4.png?{sizes:[400, 250, 150], placeholder: true}').placeholder %>"
+            alt="photo stagruz"
+          >
+        </picture>
+
+        <picture class="photogallery__photo lazy-image">
+          <source
+            data-srcset="<%= require('./images/photogallery/photo-5.png?{sizes:[400, 250, 150], format: \'webp\'}') %>"
+            type="image/webp"
+          >
+          <img
+            width="400px" height="300px"
+            src="<%= require('./images/photogallery/photo-5.png?{sizes:[400, 250, 150]}') %>"
+            data-srcset="<%= require('./images/photogallery/photo-5.png?{sizes:[400, 250, 150]}') %>"
+            srcset="<%= require('./images/photogallery/photo-5.png?{sizes:[400, 250, 150], placeholder: true}').placeholder %>"
+            alt="photo stagruz"
+          >
+        </picture>
+
+        <picture class="photogallery__photo lazy-image">
+          <source
+            data-srcset="<%= require('./images/photogallery/photo-3.png?{sizes:[400, 250, 150], format: \'webp\'}') %>"
+            type="image/webp"
+          >
+          <img
+            width="400px" height="300px"
+            src="<%= require('./images/photogallery/photo-3.png?{sizes:[400, 250, 150]}') %>"
+            data-srcset="<%= require('./images/photogallery/photo-3.png?{sizes:[400, 250, 150]}') %>"
+            srcset="<%= require('./images/photogallery/photo-3.png?{sizes:[400, 250, 150], placeholder: true}').placeholder %>"
+            alt="photo stagruz"
+          >
+        </picture>
+
+        <picture class="photogallery__photo lazy-image">
+          <source
+            data-srcset="<%= require('./images/photogallery/photo-4.png?{sizes:[400, 250, 150], format: \'webp\'}') %>"
+            type="image/webp"
+          >
+          <img
+            width="400px" height="300px"
+            src="<%= require('./images/photogallery/photo-4.png?{sizes:[400, 250, 150]}') %>"
+            data-srcset="<%= require('./images/photogallery/photo-4.png?{sizes:[400, 250, 150]}') %>"
+            srcset="<%= require('./images/photogallery/photo-4.png?{sizes:[400, 250, 150], placeholder: true}').placeholder %>"
+            alt="photo stagruz"
+          >
         </picture>
       </div>
     </section>
@@ -415,14 +600,14 @@
         <p class="footer__signature">Залиште заявку і ми зв’яжемося з Вами</p>
         <div class="footer__contacts">
           <div class="footer__contact">
-            <img src="./img/icon/phone_dark.svg" alt="icon phone" width="20px" height="20px" class="footer__icon">
+            <img src="<%= require('./images/icon/phone_dark.svg')%>" alt="icon phone" width="20px" height="20px" class="footer__icon">
             <div class="footer__phone">
               <a href="tel:0951248443">(095) 558-24-24</a>
               <a href="tel:+0666141726">(068) 128-24-24</a>
             </div>
           </div>
           <div class="footer__contact">
-            <img src="./img/icon/location.svg" alt="icon location" width="20px" height="20px" class="footer__icon">
+            <img src="<%= require('./images/icon/location.svg')%>" alt="icon location" width="20px" height="20px" class="footer__icon">
             <p class="footer__adress">м.Полтава, бульвар Б.Хмельницкого, 3</p>
           </div>
         </div>
@@ -441,18 +626,42 @@
       <div class="footer__down">
         <div class="footer__down-container">
 
-          <picture class="footer__car_left">
-            <source srcset="./img/footer-car-1.webp" type="image/webp">
-            <img width="" height="" src="./img/footer-car-1.png" alt="photo stagruz">
+          <picture class="footer__car_left lazy-image">
+            <source
+              srcset="<%= require('./images/cars/footer-car-1.png?{sizes:[450, 300], format: \'webp\'}') %>"
+              type="image/webp"
+            >
+            <img
+              width="auto" height="auto"
+              src="<%= require('./images/cars/footer-car-1.png?{sizes:[450, 300]}') %>"
+              alt="photo stagruz"
+            >
           </picture>
-          <picture class="footer__car_right">
-            <source srcset="./img/footer-car-2.webp" type="image/webp">
-            <img width="" height="" src="./img/footer-car-2.png" alt="photo stagruz">
+
+          <picture class="footer__car_right lazy-image">
+            <source
+              srcset="<%= require('./images/cars/footer-car-2.png?{sizes:[450, 300], format: \'webp\'}') %>"
+              type="image/webp"
+            >
+            <img
+              width="auto" height="auto"
+              src="<%= require('./images/cars/footer-car-2.png?{sizes:[450, 300]}') %>"
+              alt="photo stagruz"
+            >
           </picture>
 
           <p class="footer__confidense">copyright © 2021  Усі права захищені</p>
-          <img src="./img/logo-opacity.png" alt="logo" width="208px" height="100px" class="footer__logo footer__logo_opacity">
-          <img src="./img/logo.png" alt="logo" width="131px" height="61px" class="footer__logo footer__logo_dark">
+
+          <picture class="footer__logo footer__logo_dark">
+            <source srcset="<%= require('./images/logo.png?{sizes:[124], format: \'webp\'}') %>" type="image/webp">
+            <img src="<%= require('./images/logo.png') %>"  width="131px" height="61px" alt="logo">
+          </picture>
+
+          <picture class="footer__logo footer__logo_opacity">
+            <source srcset="<%= require('./images/logo-opacity.png?{sizes:[124], format: \'webp\'}') %>" type="image/webp">
+            <img src="<%= require('./images/logo-opacity.png') %>"  width="208px" height="100px" alt="logo">
+          </picture>
+
           <p class="footer__confidense footer__confidense_2">Політика конфіденційності</p>
         </div>
       </div>

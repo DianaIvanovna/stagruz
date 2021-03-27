@@ -1,5 +1,4 @@
 import "./style.scss";
-import "./index.html";
 
 import Swiper from 'swiper'; // import Swiper JS
 import SwiperCore, { Navigation, Pagination, Scrollbar } from 'swiper/core'; // Import Swiper and modules

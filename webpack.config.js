@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
-const ImageminWebpWebpackPlugin= require("imagemin-webp-webpack-plugin");
+const sharpAdapter = require('responsive-loader/sharp');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -49,24 +49,6 @@ const plugins = () => {
     }),
 
   ];
-
-  if (isProd) {
-    basePlugins.push(
-      new ImageminWebpWebpackPlugin({
-        config: [{
-          test: /\.(jpe?g|png)/,
-          options: {
-            quality: 75
-          }
-        }],
-        overrideExtension: true,
-        detailedLogs: false,
-        silent: false,
-        strict: true
-      }),
-    )
-  }
-
   return basePlugins;
 };
 
@@ -93,10 +75,6 @@ module.exports = {
   devtool: isProd ? false : 'source-map',
   module: {
     rules: [
-      {
-        test: /\.html$/,
-        loader: 'html-loader',
-      },
       {
         test: /\.css$/i,
         use: [
@@ -130,8 +108,17 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.(?:|gif|png|jpg|jpeg|svg)$/,
+        test: /\.(?:|gif|svg)$/,
         type: "asset",
+      },
+      {
+        test: /\.(jpe?g|png|webp)$/i,
+        use: {
+            loader: 'responsive-loader',
+            options: {
+                adapter: sharpAdapter,
+            }
+        }
       },
       {
         test: /\.(?:|eot|ttf|woff|woff2)$/,
