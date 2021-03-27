@@ -4,18 +4,19 @@
   bottom: 76px;
   transform: translateX(-100%);
 
-  @media screen and (max-width: 900px) {
-    bottom: 35px;
-  }
-
   img {
     object-fit: contain;
+  }
+
+  @media screen and (max-width: 900px) {
+    bottom: 35px;
   }
 
   @media screen and (max-width: 600px) {
     img {
       bottom: 40px;
       width: 290px;
+      height: 126px;
     }
   }
 }
@@ -26,12 +27,12 @@
   bottom: 76px;
   transform: translateX(100%);
 
-  @media screen and (max-width: 900px) {
-    bottom: 35px;
-  }
-
   img {
     object-fit: contain;
+  }
+
+  @media screen and (max-width: 900px) {
+    bottom: 35px;
   }
 
   @media screen and (max-width: 600px) {
@@ -40,6 +41,7 @@
     img {
       bottom: 40px;
       width: 290px;
+      height: 126px;
     }
   }
 }
