@@ -153,20 +153,39 @@ import Form from './js/Form';
   const form = new Form(formContainer);
 })();
 
-(function () { // для загрузки карты позже
+// LAZY LOADING IMAGE AND MAP
+(function () {
+
   document.addEventListener("DOMContentLoaded", function() {
     const imageObserver = new IntersectionObserver((entries, imgObserver) => {
       entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
+          if (entry.target.classList.contains("footer__card")){
             const item = entry.target;
             item.innerHTML = `<iframe class="footer__maps" src="https://www.google.com/maps/d/embed?mid=1pq0l6-IMWArbcPmm-qQTbuy1M3TPFoG6" width="579" height="240"></iframe>`;
             imgObserver.unobserve(item);
+          } else {
+            const lazyPicture = entry.target;
+            const lazyImage = lazyPicture.getElementsByTagName("img");
+            const sourseLazyImage = lazyPicture.getElementsByTagName("source");
+
+            Array.from(sourseLazyImage).forEach((item)=>{
+              item.setAttribute('srcset', item.getAttribute('data-srcset'))
+            })
+            lazyImage[0].setAttribute('srcset', lazyImage[0].getAttribute('data-srcset'));
+            lazyPicture.classList.remove("lazy-image");
+            imgObserver.unobserve(lazyPicture);
+          }
         }
       })
     });
-    const mapsContainer = document.querySelector('.footer');
+    const lazyImages = document.querySelectorAll('.lazy-image');
     const maps = document.querySelector('.footer__card');
+    lazyImages.forEach((v) => {
+      imageObserver.observe(v);
+    })
     imageObserver.observe(maps);
   })
+
 })();
 
